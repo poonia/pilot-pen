@@ -1,0 +1,128 @@
+.sidebar {
+	margin: 0;
+}
+.upper-content {
+	height: 342px;
+	background-color: rgba(124, 205, 206, 0.25);
+}
+.contact-form {
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 812px;
+  height: 584px;
+  margin: 121px 190px 30.5px;
+  padding: 0px 197px 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 0 rgba(82, 82, 82, 0.16);
+  background-color: #ffffff;
+	text-align: center;
+}
+.page-heading {
+  font-family: Quicksand;
+  font-size: 2.8em;
+  font-weight: 600;
+  text-align: center;
+  /* font-stretch: normal; */
+  /* font-style: normal; */
+  /* line-height: 1.67; */
+  /* letter-spacing: -0.3px; */
+}
+.heading {
+	padding: 40px 0;
+}
+.form-header {
+  font-family: Quicksand;
+  font-size: 2em;
+  /*height: 30px;
+  margin: 40px 0;
+  font-family: Quicksand;
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.05px;
+  color: rgba(0, 0, 0, 0.87);*/
+}
+.input-text {
+  height: 30px;
+  width: 418px;
+  margin: 0 0 28px;
+  padding: 6px 349px 5px 22px;
+  border-radius: 25px;
+  border: solid 1px #c9c9c9;
+  background-color: #ffffff;
+}
+textarea::placeholder,
+input::placeholder {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  text-align: left;
+  color: #221f1f;
+}
+.message {
+	width: 418px;
+	height: 120px;
+	padding: 12px 0 0 22px;
+	border-radius: 16px;
+	border: solid 1px #c9c9c9;
+	background-color: #ffffff;
+}
+.send-btn {
+	width: 172px;
+	height: 44px;
+	margin: 35px 123px 40px 123px;
+	padding: 13px 40px 12px 41px;
+	border-radius: 22px;
+	background-color: #7ccdce;
+	font-family: Raleway;
+	font-size: 16px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+	border: none;
+}
+.call-info {
+	height: 23px;
+	font-family: Quicksand;
+	font-size: 18px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: 0.06px;
+	color: rgba(0, 0, 0, 0.87);
+}
+.or-text {
+  height: 27px;
+  color: #bcbcbc;
+  position: relative;
+  display: inline-block;
+  margin: 0 0 24px 0;
+}
+.or-text:before {
+  content: "";
+  border: 0.5px solid #bcbcbc;
+  position: absolute;
+  width: 165px;
+  top: 8px;
+  left: -175px;
+}
+.or-text:after {
+  content: "";
+  border: 0.5px solid #bcbcbc;
+  width: 165px;
+  position: absolute;
+  top: 8px;
+  right: -175px;
+}

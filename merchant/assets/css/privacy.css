@@ -1,0 +1,118 @@
+.content-right {
+	padding-left: 0;
+	display: inline-flex;
+}
+
+.content-left {
+	display: inline-flex;
+	margin-right: 16px;
+}
+
+.back-arrow {
+    margin-right: 12px;
+    margin: 4px 12px 3px 0;
+    box-shadow: 0 1px 1px 0 #f4f4f4;
+}
+
+.home-link, .back-arrow {
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: #7ccdce;
+}
+
+.upper-content {
+	padding: 32px 0;
+}
+
+.lower-content {
+	display: inline-flex;
+}
+
+.sub-wrapper {
+	margin-left: 166px;
+}
+
+.tab-content {
+	margin-bottom: 32px;
+}
+
+.tab-1-content, .tab-2-content {
+    width: 796px;
+    height: 1010px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    padding: 40px 28px 0 28px;
+}
+
+.content-left .nav {
+    width: 216px;
+    margin: 0 0 1px;
+    border-radius: 10px;
+    border: solid 1px #d1d0d0;
+    background-color: #ffffff;
+    height: 110px;
+    float: right;
+}
+
+.nav-pills .nav-link:first-child {
+	border-radius: 0;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.nav-pills .nav-link:last-child {
+	border-radius: 0;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.nav .nav-link {
+	height: 54px;
+	width: 216px;
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    line-height: 1.78;
+    letter-spacing: 0.06px;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+
+.nav .nav-link.active {
+	background-color: #7ccdce;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.privacy-header, .terms-header {
+    width: 740px;
+    height: 50px;
+    border-radius: 31px;
+    background-color: rgba(188, 188, 188, 0.25);
+}
+
+.terms-header span,
+.privacy-header span {
+	padding-left: 15px;
+	line-height: 2.5;
+	font-family: Quicksand;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.inner-content {
+	margin-top: 40px;
+}
+
+.inner-content h5 {
+	margin-bottom: 30px;
+}

@@ -1,0 +1,127 @@
+.sidebar {
+	margin: 0;
+}
+.upper-content {
+	/*height: 409px;*/
+	background-color: rgba(124, 205, 206, 0.25);
+	/*padding: 44px 106px 44px 72px;*/
+  padding: 3em;
+	/*display: inline-flex;*/
+  display: flex;
+}
+.grey-box {
+	width: 448px;
+	height: 321px;
+	margin: 0 0 0 180px;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px 0 rgba(82, 82, 82, 0.16);
+	background-color: #ffffff;
+}
+
+.about-header {
+	font-family: Quicksand;
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.78;
+  letter-spacing: 0.06px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.about-content {
+	font-family: Quicksand;
+	font-size: 2.5em;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.33;
+	letter-spacing: -0.3px;
+	text-align: left;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+.story-container {
+	margin-top: 28px;
+}
+
+.story-content {
+	/*margin: 2em;*/
+  font-size: 1.2em;
+  /*margin: 28px 240px 40px;
+	font-family: Raleway;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.5;
+	letter-spacing: 0.09px;
+	text-align: left;
+	color: rgba(0, 0, 0, 0.87);*/
+}
+
+.story-header {
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: 0.05px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.brand-header {
+	margin-top: 28px;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: 0.05px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.brand-content-1 {
+	margin: 28px 240px 40px;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.09px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.brand-content-2 {
+	margin: 21px 240px 96.5px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.09px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.story-grey-box-1 {
+	width: 45%;
+  height: 321px;
+  /*margin: 0 16px 0 111px;*/
+  border-radius: 10px;
+  background-color: #f7f7f7;
+}
+
+.story-grey-box-2 {
+	width: 45%;
+  height: 321px;
+  /*margin: 0 0 0 16px;*/
+  border-radius: 10px;
+  background-color: #f7f7f7;
+}

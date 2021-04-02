@@ -1,0 +1,13 @@
+.dashboard-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.03);
+  border: solid 1px rgba(224, 224, 224, 0.74);
+  background-color: #ffffff;
+}
+
+.add-team-member .form-group {
+  margin-bottom: 28px;
+}
