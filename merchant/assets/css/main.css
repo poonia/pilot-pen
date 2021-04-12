@@ -174,6 +174,13 @@ body {
   background: #f7f7f7;
 }
 
+a {
+  color: #7ccdce;
+}
+a:hover {
+  color: #63bbbd;
+}
+
 /* buttons */
 .btn {
   border-radius: 45px;
