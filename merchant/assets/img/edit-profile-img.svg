@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66">
+    <defs>
+        <filter id="bcqfhrizna" width="66" height="66" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="1"/>
+            <feGaussianBlur result="blur" stdDeviation="1.5"/>
+            <feFlood flood-opacity=".2"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g>
+        <g filter="url(#bcqfhrizna)" transform="translate(-1084.5 -627.5) translate(1084.5 627.5)">
+            <circle cx="28.5" cy="28.5" r="28.5" fill="rgba(34,31,31,0.89)" transform="translate(4.5 3.5)"/>
+        </g>
+        <g>
+            <path fill="none" d="M0 0h26v26H0z" transform="translate(-1084.5 -627.5) translate(1104.81 646.5)"/>
+            <path fill="#fff" d="M3 18v3.948h3.948l11.646-11.641-3.949-3.948zM21.647 7.254a1.049 1.049 0 0 0 0-1.485l-2.464-2.464a1.049 1.049 0 0 0-1.485 0l-1.926 1.927 3.948 3.949 1.927-1.927z" transform="translate(-1084.5 -627.5) translate(1104.81 646.5) translate(.524 .523)"/>
+        </g>
+    </g>
+</svg>

@@ -490,6 +490,14 @@ input.form-control[readonly] {
   background-color: #ffe4b2;
 }
 
+.add-card {
+  border: 3px dashed #bcbcbc;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
 /*icon*/
 .fix-v-alignment::before {
   vertical-align: middle;
@@ -509,7 +517,21 @@ input.form-control[readonly] {
   background-color: #ffffff;
   min-height: 65vh;
 }
+.form-card.small-card {
+  min-height: 50vh;
+}
 .bg-wrapper-container {
   margin-top: -30px;
   min-height: calc(100vh - 34px);
+}
+.term-box {
+  height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #bcbcbc;
+  padding: 25px;
+}
+
+/* product detail */
+.min-h-300 {
+  min-height: 300px;
 }

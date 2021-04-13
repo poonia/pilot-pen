@@ -664,3 +664,17 @@ input.form-control[readonly] {
 .delivered::before {
   background: #7ccdce;
 }
+
+.profile-img-wrapper img {
+  border-radius: 50%;
+}
+
+.post-icn-input .form-control {
+  width: calc(100% - 40px);
+  margin-right: 15px;
+  display: inline-block;
+}
+.post-icn-input img {
+  display: inline-block;
+  margin-bottom: 5px;
+}
