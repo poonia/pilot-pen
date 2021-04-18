@@ -147,6 +147,15 @@ body {
   font-size: 2rem;
 }
 
+.font-rw-b-17 {
+  font-family: 'Raleway-B', 'Helvetica', Arial;
+  font-size: 1.7rem !important;
+}
+.font-rw-b-20 {
+  font-family: 'Raleway-B', 'Helvetica', Arial;
+  font-size: 2rem !important;
+}
+
 .font-clr-coral {
   color: #f48070;
 }
@@ -181,6 +190,10 @@ a:hover {
   color: #63bbbd;
 }
 
+.flex-grow-1 {
+  flex: 1;
+}
+
 /* buttons */
 .btn {
   border-radius: 45px;
@@ -205,6 +218,20 @@ a:hover {
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary.focus,
 .btn-primary:focus {
+  background-color: #74c7c9;
+  border-color: #74c7c9;
+}
+
+.btn-outline-primary {
+  color: #74c7c9;
+  border-color: #74c7c9;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-primary.dropdown-toggle,
+.btn-outline-primary:hover {
+  color: #fff;
   background-color: #74c7c9;
   border-color: #74c7c9;
 }
@@ -279,6 +306,11 @@ a:hover {
   font-size: 1.6rem;
 }
 
+.b-table.table-striped tbody tr:hover {
+  color: inherit;
+  background-color: #efe8e8;
+}
+
 /* img */
 .img-90-70 {
   width: 90px;
@@ -288,6 +320,10 @@ a:hover {
 .img-85-65 {
   width: 85px;
   height: 65px;
+}
+
+.h-80px {
+  height: 80px;
 }
 
 /* toggle */
@@ -534,4 +570,83 @@ input.form-control[readonly] {
 /* product detail */
 .min-h-300 {
   min-height: 300px;
+}
+
+.buy-btn {
+  padding: 5px 20px 5px 5px;
+  min-width: 185px;
+  line-height: 36px;
+}
+.buy-btn img {
+  float: left;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #222;
+  background-color: transparent;
+  border-color: transparent transparent #7ccdce;
+  border-bottom: 4px solid #7ccdce !important;
+}
+.nav-tabs .nav-link {
+  flex: 0 1 auto;
+  font-family: 'Raleway-B', 'Helvetica', Arial;
+  font-size: 2rem;
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  color: #222;
+  font-size: 20px;
+  padding: 10px 25px;
+}
+
+.nav-tabs .nav-link .btn {
+  margin: 0 4px !important;
+}
+
+.nav-tabs .nav-link.active.add-info-tab {
+  border-bottom: 4px solid transparent !important;
+}
+
+.nav-tabs .nav-link.add-info-tab {
+  font-family: 'Raleway-R', 'Helvetica', Arial;
+  font-size: 1.8rem;
+}
+
+.nav-tabs .add-info-tab .add-info-tab-btn {
+  background: #fff;
+  padding: 8px 12px;
+  border: dashed 2px #bcbcbc;
+  border-radius: 10px;
+}
+
+.add-info-tab .form-group,
+.checked-btn-input.form-group {
+  width: calc(100% - 40px);
+  display: inline-block;
+}
+.add-info-tab .form-group .form-control {
+  border-radius: 15px;
+  padding: 12px;
+}
+.add-info-tab .btn,
+.checked-btn-input .btn {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  vertical-align: top;
+  padding-top: 10px;
+}
+.product-price-block {
+  border-top: 1px solid #bcbcbc;
+  padding-top: 15px;
+}
+
+.b-colored-dot {
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3px;
 }

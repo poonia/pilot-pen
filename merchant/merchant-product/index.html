@@ -51,7 +51,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand mr-auto" href="#">
-        <img src="../assets/img/group-1216.svg" class="logo" />
+        <img src="../assets/img/logo-icn.svg" class="logo" />
       </a>
       <div class="d-flex align-items-center">
         <form class="d-md-flex d-none search-input-container">
@@ -88,7 +88,7 @@
       </div>
       <div class="">
         <span class="navbar-text d-flex align-items-center">
-          <img src="../assets/img/group-1234.svg" class="user-logo" />
+          <img src="../assets/img/green-bag-icn.svg" class="user-logo" />
           <span>Login</span>
         </span>
       </div>
@@ -140,7 +140,7 @@
               </li>
               <li>
                 <a
-                  class="side-nav-link active"
+                  class="side-nav-link"
                   href="../merchant-order/index.html"
                 >
                   <i class="bi bi-receipt mr-3 ml-2"></i>
@@ -148,7 +148,7 @@
                 >
               </li>
               <li>
-                <a class="side-nav-link" href="../merchant-product/index.html">
+                <a class="side-nav-link active" href="../merchant-product/index.html">
                   <i class="bi bi-box-seam mr-3 ml-2"></i>
                   Product</a
                 >
@@ -222,13 +222,12 @@
           <div class="container-fluid mb-5" id="content-wrapper">
             <!-- Page heading -->
 
-            <div class="row p-0 mb-5 mt-5">
-              <div class="col-6 d-flex flex-column">
-                <div class="d-flex bg-grey p-4 h-100 flex-column mt-5">
+            <div class="row p-0 mb-5 mt-5 ">
+              <div class="col-6 d-flex flex-column flex-grow-1" >
+                <div class="d-flex bg-grey p-4 h-100 flex-column mt-5 ">
                   <div
                     class="add-card d-flex flex-column bg-white min-h-300"
-                    data-toggle="modal"
-                    data-target="#addPaymentMethod"
+                    data-input-class="prd-main-img"
                   >
                     <img
                       src="../assets/img/plus.svg"
@@ -237,7 +236,9 @@
                       width="30"
                     />
                     <span class="font-rw-r-18">Add image</span>
+                    <input type="file" class="add-file-input prd-main-img" style="display: none" />
                   </div>
+
 
                   <div
                     class="add-card d-flex flex-column bg-white mt-5 mb-5 p-5"
@@ -251,11 +252,13 @@
                       width="30"
                     />
                     <span class="font-rw-r-18">Add image</span>
+                    <input type="file" class="add-file-input prd-main-img" style="display: none" />
                   </div>
+
                 </div>
               </div>
 
-              <div class="col-6">
+              <div class="col-6  d-flex flex-column flex-grow-1" >
                 <div class="d-flex bg-grey p-4 mt-5 justify-content-between">
                   <h3 class="font-qs-b-30">Add your product title here</h3>
                   <button class="btn btn-link p-0 m-0">
@@ -263,13 +266,35 @@
                   </button>
                 </div>
 
-                <div class="d-flex bg-grey p-4 mt-4">
-                  <p>
-                    22222 Lorem ipsum dolor, sit, amet consectetur adipisicing
-                    elit. Beatae numquam, rerum obcaecati consequatur suscipit
-                    soluta modi quidem earum omnis dolore minus facilis quod
-                    debitis eveniet recusandae. Vitae ratione quam pariatur.
-                  </p>
+                <div class="d-flex flex-column bg-grey p-4 mt-4  justify-content-between h-100">
+                    <div class="d-flex flex-column">
+                      <h4 class="font-rw-b-17">Attribute</h4>
+                      <div
+                        class="add-card d-flex flex-column bg-white mt-5 mb-5 p-4 h-80px"
+                        data-toggle="modal"
+                        data-target="#addPaymentMethod"
+                      >
+                        <img
+                          src="../assets/img/plus.svg"
+                          alt="add"
+                          height="30"
+                          width="30"
+                        />
+                        <span class="font-rw-r-18">Add image</span>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column product-price-block">
+                      <div class="d-flex flex-row justify-content-end mb-5">
+                        <h3 class="font-qs-b-30 mx-3">Add price here</h3>
+                        <button class="btn btn-link p-0 m-0">
+                          <img src="../assets/img/edit.svg" alt="edit" />
+                        </button>
+                      </div>
+                      <div class="text-right">
+                        <button type="button" class="btn btn-danger buy-btn font-rw-b-20">
+                          <img src="../assets/img/shoppping-bag.svg" class="float-start" alt="buy"> BUY</button>
+                      </div>
+                    </div>
                 </div>
               </div>
             </div>
@@ -277,67 +302,159 @@
             <div class="row mb-5">
               <div class="col">
                 <div class="d-flex bg-grey p-4">
-                  <p>
-                    3333 Lorem ipsum dolor, sit, amet consectetur adipisicing
-                    elit. Beatae numquam, rerum obcaecati consequatur suscipit
-                    soluta modi quidem earum omnis dolore minus facilis quod
-                    debitis eveniet recusandae. Vitae ratione quam pariatur.
-                  </p>
+
+                    <div class="row m-0 w-100">
+                      <div class="col-xs-12 w-100">
+                        <nav>
+                          <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="info-tab-p-1" data-toggle="tab" href="#info-tab-1" role="tab" aria-controls="nav-home" aria-selected="true">Product Info <button class="btn btn-link m-0 p-0"><img src="../assets/img/edit.svg" alt=""></button> <button class="btn btn-link m-0 p-0"><img src="../assets/img/cross.svg" alt="" height="15" width="15"></button></a>
+
+                            <a class="nav-item nav-link add-info-tab" id="add-info-tab-p" data-toggle="tab" href="#add-info-tab" role="tab" aria-controls="nav-profile" aria-selected="false"> <span class="add-info-tab-btn"><img src="../assets/img/plus.svg" alt="add" height="25" width="25"> Add tab</span></a>
+                           </div>
+                        </nav>
+                        <div class="tab-content py-3 px-3 px-sm-0 w-100" id="nav-tabContent">
+                          <div class="tab-pane py-5 fade show active" id="info-tab-1" role="tabpanel" aria-labelledby="info-tab-p-1">
+                            Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                          </div>
+                          <div class="tab-pane fade add-info-tab" id="add-info-tab" role="tabpanel" aria-labelledby="add-info-tab-p">
+
+                            <div class="form-group mt-3 ">
+                              <textarea class="form-control" id="descinfo" placeholder="Type description here" rows="10" ></textarea>
+                            </div>
+                            <button class="btn btn-link p-0 m-0">
+                              <img src="../assets/img/icn-checked.svg" height="25" width="25" alt="">
+                            </button>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+
                 </div>
               </div>
             </div>
 
             <!-- Variation cards -->
-            <div class="row b-card mx-0 mb-4">
+            <div class="row  mb-4">
               <div class="col-12">
-                <div class="font-qs-b-18 mb-4">Completed</div>
+                <div class="font-qs-b-18 mb-4">Manage variation</div>
 
                 <div class="row py-3">
                   <div class="col">
-                    <table class="table table-striped b-table">
+                    <table class="table table-hover table-striped b-table">
                       <thead>
                         <tr>
-                          <th scope="col">Ordered</th>
-                          <th scope="col">Order ID</th>
-                          <th scope="col">Timer</th>
-                          <th scope="col">Items</th>
-                          <th scope="col">Total</th>
-                          <th scope="col">Status</th>
+                          <th scope="col">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" >
+                              <label class="custom-control-label" for=""></label>
+                            </div>
+                          </th>
+                          <th scope="col">Size
+                            <button
+                                type="button"
+                                class="btn btn-toggle btn-small"
+                                data-toggle="button"
+                                aria-pressed="false"
+                                autocomplete="off"
+                              >
+                                <div class="handle"></div>
+                              </button>
+                          </th>
+                          <th scope="col">Color
+                              <button
+                              type="button"
+                              class="btn btn-toggle btn-small"
+                              data-toggle="button"
+                              aria-pressed="false"
+                              autocomplete="off"
+                            >
+                              <div class="handle"></div>
+                            </button>
+                          </th>
+                          <th scope="col" class="text-center">Inventory Count
+                              <button class="btn btn-link m-0 p-0"><img src="../assets/img/edit.svg" alt="edit"></button></th>
+                          <th scope="col" class="text-center">SKU
+                            <button class="btn btn-link m-0 p-0"><img src="../assets/img/edit.svg" alt="edit"></button></th>
+                          <th scope="col">UPC
+                            <button class="btn btn-link m-0 p-0"><img src="../assets/img/edit.svg" alt="edit"></button></th>
+                          <th scope="col" class="text-center">Assign images</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td scope="row">12/22/2021 | 2:34 PM</td>
-                          <td>12/22/2021 | 2:34 PM</td>
-                          <td>1m 23s</td>
-                          <td>3</td>
-                          <td>$345.44</td>
-                          <td>Awaiting acceptance</td>
+                          <td scope="col">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input"  >
+                              <label class="custom-control-label" for=""></label>
+                            </div>
+                          </td>
+                          <td>Small</td>
+                          <td> <span class="b-colored-dot" style="background-color: red;"></span> Red</td>
+                          <td class="text-center">2</td>
+                          <td class="text-center">Ys189FJ5N</td>
+                          <td>7483738393973</td>
+                          <td class="text-center"><button class="btn btn-outline-primary btn-small">Add</button></td>
                         </tr>
                         <tr>
-                          <td scope="row">12/22/2021 | 2:34 PM</td>
-                          <td>12/22/2021 | 2:34 PM</td>
-                          <td>1m 23s</td>
-                          <td>3</td>
-                          <td>$345.44</td>
-                          <td>Awaiting acceptance</td>
+                          <td scope="col">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input"  >
+                              <label class="custom-control-label" for=""></label>
+                            </div>
+                          </td>
+                          <td>Small</td>
+                          <td> <span class="b-colored-dot" style="background-color: red;"></span> Red</td>
+                          <td class="text-center">2</td>
+                          <td class="text-center">Ys189FJ5N</td>
+                          <td>7483738393973</td>
+                          <td class="text-center"><button class="btn btn-outline-primary btn-small">Add</button></td>
                         </tr>
                         <tr>
-                          <td scope="row">12/22/2021 | 2:34 PM</td>
-                          <td>12/22/2021 | 2:34 PM</td>
-                          <td>1m 23s</td>
-                          <td>3</td>
-                          <td>$345.44</td>
-                          <td>Awaiting acceptance</td>
+                          <td scope="col">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input"  >
+                              <label class="custom-control-label" for=""></label>
+                            </div>
+                          </td>
+                          <td>Small</td>
+                          <td> <span class="b-colored-dot" style="background-color: red;"></span> Red</td>
+                          <td class="text-center">2</td>
+                          <td class="text-center">Ys189FJ5N</td>
+                          <td>7483738393973</td>
+                          <td class="text-center"><button class="btn btn-outline-primary btn-small">Add</button></td>
                         </tr>
-                        <tr class="text-danger">
-                          <td scope="row">12/22/2021 | 2:34 PM</td>
-                          <td>12/22/2021 | 2:34 PM</td>
-                          <td>1m 23s</td>
-                          <td>3</td>
-                          <td>$345.44</td>
-                          <td>Awaiting acceptance</td>
+                        <tr>
+                          <td scope="col">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input"  >
+                              <label class="custom-control-label" for=""></label>
+                            </div>
+                          </td>
+                          <td>Small</td>
+                          <td> <span class="b-colored-dot" style="background-color: red;"></span> Red</td>
+                          <td class="text-center">2</td>
+                          <td class="text-center">Ys189FJ5N</td>
+                          <td>7483738393973</td>
+                          <td class="text-center"><button class="btn btn-outline-primary btn-small">Add</button></td>
                         </tr>
+                        <tr>
+                          <td scope="col">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input"  >
+                              <label class="custom-control-label" for=""></label>
+                            </div>
+                          </td>
+                          <td>Small</td>
+                          <td> <span class="b-colored-dot" style="background-color: red;"></span> Red</td>
+                          <td class="text-center">2</td>
+                          <td class="text-center">Ys189FJ5N</td>
+                          <td>7483738393973</td>
+                          <td class="text-center"><button class="btn btn-outline-primary btn-small">Add</button></td>
+                        </tr>
+
+
                       </tbody>
                     </table>
                   </div>
@@ -359,7 +476,7 @@
           <div class="col-md-3 text-right">
             <div class="footer-logo-section">
               <a class="" href="#">
-                <img src="../assets/img/group-1216.svg" class="footer-logo" />
+                <img src="../assets/img/logo-icn.svg" class="footer-logo" />
               </a>
               <p class="footer-logo-text">www.Bukit.com</p>
             </div>
@@ -419,5 +536,24 @@
     ></script>
 
     <script src="../assets/js/sidenav.js"></script>
+    <script>
+        $(".add-card").on("click", function() {
+          let className = $(this).data('inputClass');
+          if(className){
+            // creating input on-the-fly
+            var input = $(document.createElement("input"));
+            input.attr("type", "file");
+            input.attr("class", className);
+            // add onchange handler if you wish to get the file :)
+            input.trigger("click"); // opening dialog
+            return false; // avoiding navigation
+          }
+
+          });
+    </script>
+
   </body>
 </html>
+
+
+<!-- https://jscolor.com/examples/ -->
