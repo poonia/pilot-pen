@@ -548,6 +548,11 @@ input.form-control[readonly] {
   background-color: #ffe4b2;
 }
 
+.logo-wrapper-div {
+  align-items: flex-end;
+  margin-bottom: 10%;
+}
+
 .add-card {
   border: 3px dashed #bcbcbc;
   height: 100%;
