@@ -709,6 +709,14 @@ input[type='number'] {
   -moz-appearance: textfield;
 }
 
+.header-select {
+  width: 200px;
+}
+@media (min-width: 768px) {
+  .header-select {
+    width: 360px;
+  }
+}
 .b-btn-dropdown {
   font-family: 'Raleway-R', 'Helvetica', Arial;
   font-size: 1.6rem;
