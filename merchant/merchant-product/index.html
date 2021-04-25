@@ -211,20 +211,27 @@
             <div class="row p-0 mb-5 mt-5 ">
               <div class="col-6 d-flex flex-column flex-grow-1" >
                 <div class="d-flex bg-grey p-4 h-100 flex-column mt-5 ">
-                  <div
-                    class="add-card d-flex flex-column bg-white min-h-300"
-                    data-input-class="prd-main-img"
-                  >
-                    <img
-                      src="../assets/img/plus.svg"
-                      alt="add"
-                      height="30"
-                      width="30"
-                    />
-                    <span class="font-rw-r-18">Add image</span>
-                    <input type="file" class="add-file-input prd-main-img" style="display: none" />
-                  </div>
 
+                  <div class="file-upload mb-5">
+                    <div class="image-upload-wrap">
+                      <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                      <div class="drag-text d-flex flex-column text-center align-items-center pt-5 pb-5 min-h-300 justify-content-center">
+                        <img
+                        src="../assets/img/plus.svg"
+                        alt="add"
+                        height="30"
+                        width="30"
+                      />
+                      <span class="font-rw-r-18">Add image</span>
+                      </div>
+                    </div>
+                    <div class="file-upload-content">
+                      <img class="file-upload-image" src="#" alt="your image" />
+                      <div class="image-title-wrap">
+                        <button type="button" onclick="removeUpload()" class="btn btn-danger">Remove <span class="image-title">Uploaded Image</span></button>
+                      </div>
+                    </div>
+                  </div>
 
                   <div
                     class="add-card d-flex flex-column bg-white mt-5 mb-5 p-5"
@@ -1198,6 +1205,37 @@
             dots: false,
             navText: ['<span class="fas fa-chevron-left fa-2x"></span>','<span class="fas fa-chevron-right fa-2x"></span>'],
           })
+
+          // file upload
+          function readURL(input) {
+            if (input.files && input.files[0]) {
+              var reader = new FileReader();
+              reader.onload = function(e) {
+                $('.image-upload-wrap').hide();
+                $('.file-upload-image').attr('src', e.target.result);
+                $('.file-upload-content').show();
+                $('.image-title').html(input.files[0].name);
+              };
+              reader.readAsDataURL(input.files[0]);
+            } else {
+              removeUpload();
+            }
+          }
+
+          function removeUpload() {
+            $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+            $('.file-upload-content').hide();
+            $('.image-upload-wrap').show();
+          }
+
+          $('.image-upload-wrap').bind('dragover', function () {
+            $('.image-upload-wrap').addClass('image-dropping');
+          });
+
+          $('.image-upload-wrap').bind('dragleave', function () {
+              $('.image-upload-wrap').removeClass('image-dropping');
+          });
+
     </script>
 
   </body>
