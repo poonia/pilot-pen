@@ -409,6 +409,53 @@ strong {
   background-color: #f48070;
 }
 
+/* Toggle button */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #8a8a8a;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.8rem;
+    width: 1.8rem;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #f48070;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #f48070;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(2rem);
+  -ms-transform: translateX(2rem);
+  transform: translateX(2rem);
+}
+.slider.round {
+  border-radius: 2rem;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+/* Toggle button /
+
 /* forms */
 .form-control {
   height: 36px;
@@ -1139,3 +1186,25 @@ input[type='number'] {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
+
+/* Color picker */
+/*.colorpicker-component i {
+  border-radius: 0px 25px 25px 0px !important;
+  border-left: none;
+}*/
+.colorpicker-component .input-group-addon {
+  padding: 7px 11px 6px 7px;
+  border-radius: 0 25px 25px 0;
+  border: solid 1px #c9c9c9;
+  border-left: none;
+  background-color: #dcdcdc;
+  height: 36px;
+}
+.colorpicker-component i {
+  display: inline-block;
+  height: 16px;
+  vertical-align: text-top;
+  width: 16px;
+  border-radius: 0 !important;
+}
+/* Color picker */

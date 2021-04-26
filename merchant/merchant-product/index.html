@@ -39,11 +39,10 @@
     <link rel="stylesheet" href="../assets/css/left_nav.css" />
     <link rel="stylesheet" href="../assets/css/dashboard.css" />
 
-       <!-- Custom Vendor CSS used -->
-       <link
-       rel="stylesheet"
-       href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css"
-     />
+   <!-- Custom Vendor CSS used -->
+   <link rel="stylesheet" href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" />
+   <!-- <link rel="stylesheet" href="../assets/vendor/color-picker/dist/css/bootstrap-colorpicker.css" /> -->
+   <link rel="stylesheet" href="../assets/vendor/color-picker/css/bootstrap-colorpicker.css" />
   </head>
   <body id="page-top">
     <!-- Top Navigation Starts -->
@@ -864,22 +863,22 @@
                 <div class="selected-attrb-items colors d-flex flex-column ">
                   <span class="selected-attrb-item" style="background: red;">
                     <span class="attrb-value font-rw-b-14">Small</span>
-                    <span class="attrb-price">+ $5.00</span>
                   </span>
+                  <span class="attrb-price mt-3">+ $5.00</span>
                   <button class="btn btn-link p-0 m-0 delete-btn"><img src="../assets/img/delete-icon.svg" alt="delete"></button>
                 </div>
                 <div class="selected-attrb-items colors d-flex flex-column active">
                   <span class="selected-attrb-item" style="background: rebeccapurple;">
                     <span class="attrb-value font-rw-b-14">Small</span>
-                    <span class="attrb-price">+ $5.00</span>
                   </span>
+                  <span class="attrb-price mt-3">+ $5.00</span>
                   <button class="btn btn-link p-0 m-0 delete-btn"><img src="../assets/img/delete-icon.svg" alt="delete"></button>
                 </div>
                 <div class="selected-attrb-items colors d-flex flex-column ">
                   <span class="selected-attrb-item" style="background: green;">
                     <span class="attrb-value font-rw-b-14">Small</span>
-                    <span class="attrb-price">+ $5.00</span>
                   </span>
+                  <span class="attrb-price mt-3">+ $5.00</span>
                   <button class="btn btn-link p-0 m-0 delete-btn"><img src="../assets/img/delete-icon.svg" alt="delete"></button>
                 </div>
                 <div class="selected-attrb-items colors d-flex flex-column add-option">
@@ -904,14 +903,12 @@
                <div class="form-group col-md-3">
                 <input type="text" class="form-control" id="add-to-price" placeholder="Add to price">
                </div>
-               <div class="form-group col-md-3">
-                 <select id="inputState" class="form-control">
-                  <option selected>Select Attribute Type</option>
-                   <option >Color</option>
-                   <option>lorem</option>
-                   <option>Ipsum</option>
-                 </select>
-               </div>
+              <div class="input-group demo2 colorpicker-component form-group col-md-3">
+                <input type="text" value="#00AABB" class="form-control" />
+                <span class="input-group-addon">
+                  <i style="background-color: #00AABB"></i>
+                </span>
+              </div>
                <div class="form-group col-md-3">
                 <button class="btn btn-outline-primary add-attr-btn">Add option</button>
                </div>
@@ -1148,96 +1145,98 @@
     <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
 
     <script src="../assets/js/sidenav.js"></script>
+    <!-- <script src="../assets/vendor/color-picker/dist/js/bootstrap-colorpicker.js"></script> -->
+    <script src="../assets/vendor/color-picker/js/bootstrap-colorpicker.js"></script>
     <script>
+      $('.demo2').colorpicker();
+      $('.demo2').on('colorpickerChange', function(event) {
+        $('.demo2 i').css('background-color', event.color.toString());
+      });
+      $(".add-card").on("click", function() {
+        let className = $(this).data('inputClass');
+        if(className) {
+          // creating input on-the-fly
+          var input = $(document.createElement("input"));
+          input.attr("type", "file");
+          input.attr("class", className);
+          // add onchange handler if you wish to get the file :)
+          input.trigger("click"); // opening dialog
+          return false; // avoiding navigation
+        }
+      });
 
-        $(".add-card").on("click", function() {
-          let className = $(this).data('inputClass');
-          if(className){
-            // creating input on-the-fly
-            var input = $(document.createElement("input"));
-            input.attr("type", "file");
-            input.attr("class", className);
-            // add onchange handler if you wish to get the file :)
-            input.trigger("click"); // opening dialog
-            return false; // avoiding navigation
+      $(document).ready(function(){
+        // plus minus counter
+        $('#qty_input').prop('disabled', true);
+        $('#plus-btn').click(function(){
+          $('#qty_input').val(parseInt($('#qty_input').val()) + 1 );
+        });
+
+        $('#minus-btn').click(function(){
+          $('#qty_input').val(parseInt($('#qty_input').val()) - 1 );
+          if ($('#qty_input').val() == 0) {
+            $('#qty_input').val(1);
           }
+        });
 
-          });
+        // edit toggle
+        $(".toggle-edit").on("click", function(event) {
+          const $parent = $(event.currentTarget).parent(),
+           parentDataId = $parent.data('id'),
+           parentId = $parent.attr('id'),
+            isEditEnabled = parentId.includes('edit');
 
-          // plus minus counter
-          $(document).ready(function(){
-                $('#qty_input').prop('disabled', true);
-                $('#plus-btn').click(function(){
-                  $('#qty_input').val(parseInt($('#qty_input').val()) + 1 );
-                });
-
-                $('#minus-btn').click(function(){
-                  $('#qty_input').val(parseInt($('#qty_input').val()) - 1 );
-                  if ($('#qty_input').val() == 0) {
-                    $('#qty_input').val(1);
-                  }
-    	          });
-          });
-
-          // edit toggle
-          $(".toggle-edit").on("click", function(event) {
-            const $parent = $(event.currentTarget).parent(),
-             parentDataId = $parent.data('id'),
-             parentId = $parent.attr('id'),
-              isEditEnabled = parentId.includes('edit');
-
-            $parent.removeClass('d-flex').addClass('d-none');
-            if(isEditEnabled) {
-              $('#'+parentDataId).removeClass('d-none').addClass('d-flex');
-            } else {
-              $('#'+parentDataId+'-edit').removeClass('d-none').addClass('d-flex');
-            }
-          })
-
-
-          // owl for product image in modal
-          $('.carousel-product-img-modal').owlCarousel({
-            items: 3,
-            loop: false,
-            autoplay: false,
-            margin: 10,
-            nav: true,
-            dots: false,
-            navText: ['<span class="fas fa-chevron-left fa-2x"></span>','<span class="fas fa-chevron-right fa-2x"></span>'],
-          })
-
-          // file upload
-          function readURL(input) {
-            if (input.files && input.files[0]) {
-              var reader = new FileReader();
-              reader.onload = function(e) {
-                $('.image-upload-wrap').hide();
-                $('.file-upload-image').attr('src', e.target.result);
-                $('.file-upload-content').show();
-                $('.image-title').html(input.files[0].name);
-              };
-              reader.readAsDataURL(input.files[0]);
-            } else {
-              removeUpload();
-            }
+          $parent.removeClass('d-flex').addClass('d-none');
+          if(isEditEnabled) {
+            $('#'+parentDataId).removeClass('d-none').addClass('d-flex');
+          } else {
+            $('#'+parentDataId+'-edit').removeClass('d-none').addClass('d-flex');
           }
+        });
 
-          function removeUpload() {
-            $('.file-upload-input').replaceWith($('.file-upload-input').clone());
-            $('.file-upload-content').hide();
-            $('.image-upload-wrap').show();
-          }
 
-          $('.image-upload-wrap').bind('dragover', function () {
-            $('.image-upload-wrap').addClass('image-dropping');
-          });
+        // owl for product image in modal
+        $('.carousel-product-img-modal').owlCarousel({
+          items: 3,
+          loop: false,
+          autoplay: false,
+          margin: 10,
+          nav: true,
+          dots: false,
+          navText: ['<span class="fas fa-chevron-left fa-2x"></span>','<span class="fas fa-chevron-right fa-2x"></span>'],
+        });
 
-          $('.image-upload-wrap').bind('dragleave', function () {
-              $('.image-upload-wrap').removeClass('image-dropping');
-          });
+        $('.image-upload-wrap').bind('dragover', function () {
+          $('.image-upload-wrap').addClass('image-dropping');
+        });
 
+        $('.image-upload-wrap').bind('dragleave', function () {
+            $('.image-upload-wrap').removeClass('image-dropping');
+        });
+      });
+
+      // file upload
+      function readURL(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+          reader.onload = function(e) {
+            $('.image-upload-wrap').hide();
+            $('.file-upload-image').attr('src', e.target.result);
+            $('.file-upload-content').show();
+            $('.image-title').html(input.files[0].name);
+          };
+          reader.readAsDataURL(input.files[0]);
+        } else {
+          removeUpload();
+        }
+      }
+
+      function removeUpload() {
+        $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+        $('.file-upload-content').hide();
+        $('.image-upload-wrap').show();
+      }
     </script>
-
   </body>
 </html>
 
