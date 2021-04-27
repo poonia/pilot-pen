@@ -213,7 +213,7 @@
 
                   <div class="file-upload mb-5">
                     <div class="image-upload-wrap">
-                      <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                      <input class="file-upload-input" type='file' onchange="readURL(this);" accept=".jpg" />
                       <div class="drag-text d-flex flex-column text-center align-items-center pt-5 pb-5 min-h-300 justify-content-center">
                         <img
                         src="../assets/img/plus.svg"
@@ -227,13 +227,15 @@
                     <div class="file-upload-content">
                       <img class="file-upload-image" src="#" alt="your image" />
                       <div class="image-title-wrap">
-                        <button type="button" onclick="removeUpload()" class="btn btn-danger">Remove <span class="image-title">Uploaded Image</span></button>
+                        <button type="button" onclick="removeUpload()" class="btn btn-link">
+                          <img src="../assets/img/delete-icon.svg" alt="Remove Image">
+                        </button>
                       </div>
                     </div>
                   </div>
 
                   <div
-                    class="add-card d-flex flex-column bg-white mt-5 mb-5 p-5"
+                    class="add-card d-flex flex-column bg-white p-5"
                     data-toggle="modal"
                     data-target="#productDetailsModal"
                   >
