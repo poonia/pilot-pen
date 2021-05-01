@@ -13,3 +13,10 @@ td.edit .input-container {
 td.edit .text-display {
   display: none;
 }
+
+.remove-carousel-img {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: white;
+}

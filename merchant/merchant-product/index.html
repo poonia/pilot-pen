@@ -210,19 +210,18 @@
 
             <div class="row p-0 mb-5 mt-5 ">
               <div class="col-6 d-flex flex-column flex-grow-1" >
-                <div class="d-flex bg-grey p-4 h-100 flex-column mt-5 ">
-
-                  <div class="file-upload mb-5">
+                <div class="d-flex bg-grey p-4 h-100 flex-column mt-5 product-imgs">
+                  <!-- <div class="file-upload mb-5 mainContainer">
                     <div class="image-upload-wrap">
                       <input class="file-upload-input" type='file' onchange="readURL(this);" accept=".jpg" />
                       <div class="drag-text d-flex flex-column text-center align-items-center pt-5 pb-5 min-h-300 justify-content-center">
                         <img
-                        src="../assets/img/plus.svg"
-                        alt="add"
-                        height="30"
-                        width="30"
-                      />
-                      <span class="font-rw-r-18">Add image</span>
+                          src="../assets/img/plus.svg"
+                          alt="add"
+                          height="30"
+                          width="30"
+                        />
+                        <span class="font-rw-r-18">Add image</span>
                       </div>
                     </div>
                     <div class="file-upload-content">
@@ -233,9 +232,32 @@
                         </button>
                       </div>
                     </div>
+                  </div> -->
+                  <div class="mb-5 mainContainer d-flex justify-content-center align-items-center">
+                    <img src="http://via.placeholder.com/350x200/f2ebe5/222.jpg?text=No Image" class="img-fluid">
+                  </div>
+                  <div class="d-flex bg-grey p-4 h-100 flex-column">
+                    <div class="row align-items-center">
+                      <div class="col-12 col-carousel">
+                        <div class="owl-carousel carousel-product-img-modal side-nav-owl">
+                          <div class="owl-carousel-item-container newImgContainer">
+                            <div class="add-card d-flex flex-column bg-white m-0">
+                              <input class="file-upload-input" type="file" onchange="uploadImgCarousel(this);" accept=".jpg">
+                              <img
+                                src="../assets/img/plus.svg"
+                                alt="add"
+                                height="30"
+                                width="30"
+                              />
+                              <span class="font-rw-r-18">Add image</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
-                  <div
+                  <!-- <div
                     class="add-card d-flex flex-column bg-white p-5"
                     data-toggle="modal"
                     data-target="#productDetailsModal"
@@ -247,9 +269,7 @@
                       width="30"
                     />
                     <span class="font-rw-r-18">Add image</span>
-
-                  </div>
-
+                  </div> -->
                 </div>
               </div>
 
@@ -439,7 +459,11 @@
                           </td>
                           <td class="text-center">Ys189FJ5N</td>
                           <td>7483738393973</td>
-                          <td class="text-center"><button class="btn btn-outline-primary btn-small">Add</button></td>
+                          <td class="text-center">
+                            <button class="btn btn-outline-primary btn-small" data-toggle="modal" data-target="#productDetailsModal">
+                              Add
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td scope="col">
@@ -713,12 +737,11 @@
               </div>
               <div class="col-sm-8 d-flex flex-column flex-grow-1">
                 <div class="d-flex bg-grey p-4 h-100 pt-5">
-                  <div class="col-7">
+                  <div class="col-7 mainContainer">
                     <img src="http://via.placeholder.com/350x200/f2ebe5/222.jpg?text=Hello" class="img-fluid">
                   </div>
                   <div class="col-5">
                     <h3 class="font-qs-b-20 mb-3">Red Sweatshirt.png</h3>
-
                     <form>
                       <div class="form-group">
                         <label for="formGroupInput" class="ml-3 mb-3">Image pack</label>
@@ -733,21 +756,16 @@
                         <input type="text" class="form-control" id="formGroupInput3" placeholder="Alt text" value="Front of the hoodie">
                       </div>
                       <button type="submit" class="btn btn-dark mt-4 mb-5">Set as primary image</button>
-
                     </form>
                   </div>
                 </div>
-                <div class="d-flex bg-grey p-4 h-100 flex-column mt-5 ">
+                <div class="d-flex bg-grey p-4 h-100 flex-column mt-5">
                   <div class="row align-items-center">
                     <div class="col-12 col-carousel">
                       <div class="owl-carousel carousel-product-img-modal side-nav-owl">
-                        <div class="owl-carousel-item-container"><img src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=1"></div>
-                        <div class="owl-carousel-item-container"><img src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=2"></div>
-                        <div class="owl-carousel-item-container"><img src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=3"></div>
-                        <div class="owl-carousel-item-container"><img src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=4"></div>
-                        <div class="owl-carousel-item-container"><img src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=5"></div>
-                        <div class="owl-carousel-item-container">
-                          <div class="add-card d-flex flex-column bg-white p-5">
+                        <div class="owl-carousel-item-container newImgContainer">
+                          <div class="add-card d-flex bg-white m-0">
+                            <input class="file-upload-input" type="file" onchange="uploadImgCarousel(this);" accept=".jpg">
                             <img
                               src="../assets/img/plus.svg"
                               alt="add"
@@ -756,7 +774,21 @@
                             />
                           </div>
                         </div>
-
+                        <div class="owl-carousel-item-container">
+                          <img src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=1">
+                        </div>
+                        <div class="owl-carousel-item-container">
+                          <img src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=2">
+                        </div>
+                        <div class="owl-carousel-item-container">
+                          <img src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=3">
+                        </div>
+                        <div class="owl-carousel-item-container">
+                          <img src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=4">
+                        </div>
+                        <div class="owl-carousel-item-container">
+                          <img src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=5">
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1187,18 +1219,6 @@
       $('.demo2').on('colorpickerChange', function(event) {
         $('.demo2 i').css('background-color', event.color.toString());
       });
-      $(".add-card").on("click", function() {
-        let className = $(this).data('inputClass');
-        if(className) {
-          // creating input on-the-fly
-          var input = $(document.createElement("input"));
-          input.attr("type", "file");
-          input.attr("class", className);
-          // add onchange handler if you wish to get the file :)
-          input.trigger("click"); // opening dialog
-          return false; // avoiding navigation
-        }
-      });
 
       $(document).ready(function(){
         // edit toggle
@@ -1224,7 +1244,10 @@
           margin: 10,
           nav: true,
           dots: false,
-          navText: ['<span class="fas fa-chevron-left fa-2x"></span>','<span class="fas fa-chevron-right fa-2x"></span>'],
+          navText: [
+            '<span class="fas fa-chevron-left fa-2x"></span>',
+            '<span class="fas fa-chevron-right fa-2x"></span>'
+          ]
         });
 
         $('.image-upload-wrap').bind('dragover', function () {
@@ -1259,29 +1282,86 @@
           if (val === 0) return;
           input.val(parseInt(val) - 1);
         });
+
+        // Carousel image click
+        $("body").on("click", ".col-carousel .owl-carousel-item-container", function(e) {
+          if ($(this).hasClass("newImgContainer")){
+            return;
+          } else if ($(e.target).parent("button").length &&
+            $(e.target).parent("button").hasClass("remove-carousel-img")) {
+            removeImgCarousel(this);
+            return;
+          }
+
+          const imgSrc = $(this).children("img").attr("src");
+          $(".mainContainer img").attr("src", imgSrc);
+        });
       });
 
-      // file upload
-      function readURL(input) {
+      function uploadImgCarousel(input) {
         if (input.files && input.files[0]) {
+          const deleteButton = `<button type="button" class="btn btn-link p-0 remove-carousel-img">
+            <img src="../assets/img/delete-icon.svg" alt="Delete">
+          </button>`;
+          let divContainer = null;
           var reader = new FileReader();
           reader.onload = function(e) {
-            $('.image-upload-wrap').hide();
-            $('.file-upload-image').attr('src', e.target.result);
-            $('.file-upload-content').show();
-            $('.image-title').html(input.files[0].name);
+            divContainer = `<div class="owl-carousel-item-container">
+              ${deleteButton}
+              <img src=${e.target.result} />
+            </div>`;
+
+            // Adds an item after the first item
+            $(input).closest(".owl-carousel")
+              .trigger("add.owl.carousel", [$(divContainer), 1])
+              .trigger("refresh.owl.carousel");
+
+            // Hide add container if max images - 8 are added
+            if ($(input).closest(".owl-carousel").find(".owl-carousel-item-container").length === 9) {
+              $(input).closest(".owl-carousel .newImgContainer").parent(".owl-item").hide();
+            }
           };
           reader.readAsDataURL(input.files[0]);
-        } else {
-          removeUpload();
         }
       }
 
-      function removeUpload() {
-        $('.file-upload-input').replaceWith($('.file-upload-input').clone());
-        $('.file-upload-content').hide();
-        $('.image-upload-wrap').show();
+      function removeImgCarousel(elem) {
+        // Get add new image container and add it to carousel again if images
+        // are less than max count i.e. 8
+        const owlCarousel = $(elem).closest(".owl-carousel");
+        if (owlCarousel.find(".owl-carousel-item-container").length === 9) {
+          const addContainer = owlCarousel.find(".newImgContainer");
+          owlCarousel.trigger("remove.owl.carousel", 0)
+            .trigger("add.owl.carousel", [$(addContainer), 0])
+            .trigger('refresh.owl.carousel');
+        }
+
+        const index = $(elem).parent().index();
+        owlCarousel.trigger('remove.owl.carousel', index)
+          .trigger('refresh.owl.carousel');
       }
+
+      // file upload
+      // function readURL(input) {
+      //   if (input.files && input.files[0]) {
+      //     var reader = new FileReader();
+      //     reader.onload = function(e) {
+      //       $('.image-upload-wrap').hide();
+      //       $('.file-upload-image').attr('src', e.target.result);
+      //       $('.file-upload-content').show();
+      //       $('.image-title').html(input.files[0].name);
+      //     };
+      //     reader.readAsDataURL(input.files[0]);
+      //   } else {
+      //     removeUpload();
+      //   }
+      // }
+
+      // function removeUpload() {
+      //   $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+      //   $('.file-upload-content').hide();
+      //   $('.image-upload-wrap').show();
+      // }
     </script>
   </body>
 </html>
