@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="../assets/css/footer.css" />
     <link rel="stylesheet" href="../assets/css/left_nav.css" />
     <link rel="stylesheet" href="../assets/css/dashboard.css" />
+    <link rel="stylesheet" href="../assets/css/product_add.css" />
 
    <!-- Custom Vendor CSS used -->
    <link rel="stylesheet" href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" />
@@ -370,7 +371,7 @@
                 </div>
 
                 <div class="row py-3">
-                  <div class="col">
+                  <div class="col table-responsive">
                     <table class="table table-hover table-striped b-table">
                       <thead>
                         <tr>
@@ -423,13 +424,17 @@
                           <td> <span class="b-colored-dot" style="background-color: red;"></span> Red</td>
                           <td class="text-center">
                             <div class="input-group b-input-counter">
-                                <div class="input-group-prepend">
-                                    <button class="btn  btn-sm" id="minus-btn"><i class="fa fa-minus"></i></button>
-                                </div>
-                                <input type="number" id="qty_input" class="form-control form-control-sm" value="2" min="1">
-                                <div class="input-group-append">
-                                    <button class="btn  btn-sm" id="plus-btn"><i class="fa fa-plus"></i></button>
-                                </div>
+                              <div class="input-group-prepend">
+                                <button class="btn btn-sm minus-btn">
+                                  <i class="fa fa-minus"></i>
+                                </button>
+                              </div>
+                              <input type="number" class="form-control form-control-sm qty_input" value="2" min="1">
+                              <div class="input-group-append">
+                                <button class="btn btn-sm plus-btn">
+                                  <i class="fa fa-plus"></i>
+                                </button>
+                              </div>
                             </div>
                           </td>
                           <td class="text-center">Ys189FJ5N</td>
@@ -445,8 +450,36 @@
                           </td>
                           <td>Small</td>
                           <td> <span class="b-colored-dot" style="background-color: red;"></span> Red</td>
-                          <td class="text-center">2</td>
-                          <td class="text-center">Ys189FJ5N</td>
+                          <td class="text-center editable">
+                            <div class="text-display">2</div>
+                            <div class="d-flex justify-content-center align-items-center input-container">
+                              <div class="input-group b-input-counter flex-nowrap mx-0">
+                                <div class="input-group-prepend">
+                                  <button class="btn btn-sm minus-btn">
+                                    <i class="fa fa-minus"></i>
+                                  </button>
+                                </div>
+                                <input type="number" class="form-control form-control-sm qty_input" value="2" min="1">
+                                <div class="input-group-append">
+                                  <button class="btn btn-sm plus-btn">
+                                    <i class="fa fa-plus"></i>
+                                  </button>
+                                </div>
+                              </div>
+                              <button class="btn btn-link p-0 my-0 mx-2 checked-btn-wid-input save-cell">
+                                <img src="../assets/img/icn-checked.svg" height="25" width="25" alt="Save">
+                              </button>
+                            </div>
+                          </td>
+                          <td class="text-center editable">
+                            <div class="text-display">Ys189FJ5N</div>
+                            <div class="d-flex justify-content-center align-items-center input-container">
+                              <input type="text" class="form-control" placeholder="SKU">
+                              <button class="btn btn-link p-0 m-0 mx-2 checked-btn-wid-input save-cell">
+                                <img src="../assets/img/icn-checked.svg" height="25" width="25" alt="Save">
+                              </button>
+                            </div>
+                          </td>
                           <td>7483738393973</td>
                           <td class="text-center"><button class="btn btn-outline-primary btn-small">Add</button></td>
                         </tr>
@@ -1168,19 +1201,6 @@
       });
 
       $(document).ready(function(){
-        // plus minus counter
-        $('#qty_input').prop('disabled', true);
-        $('#plus-btn').click(function(){
-          $('#qty_input').val(parseInt($('#qty_input').val()) + 1 );
-        });
-
-        $('#minus-btn').click(function(){
-          $('#qty_input').val(parseInt($('#qty_input').val()) - 1 );
-          if ($('#qty_input').val() == 0) {
-            $('#qty_input').val(1);
-          }
-        });
-
         // edit toggle
         $(".toggle-edit").on("click", function(event) {
           const $parent = $(event.currentTarget).parent(),
@@ -1195,7 +1215,6 @@
             $('#'+parentDataId+'-edit').removeClass('d-none').addClass('d-flex');
           }
         });
-
 
         // owl for product image in modal
         $('.carousel-product-img-modal').owlCarousel({
@@ -1214,6 +1233,31 @@
 
         $('.image-upload-wrap').bind('dragleave', function () {
             $('.image-upload-wrap').removeClass('image-dropping');
+        });
+
+        // Table edit functionality
+        $(".editable").on("click", function(e) {
+          $(this).removeClass("editable");
+          $(this).addClass("edit");
+        });
+        $(".save-cell").on("click", function(e) {
+          const val = $(this).closest('td').find("input").val();
+          $(this).closest('td').find(".text-display").text(val);
+          $(this).closest('td.edit').removeClass("edit").addClass("editable");
+          e.stopPropagation();
+        });
+
+        $('.qty_input').attr('disabled', true);
+        $('.plus-btn').click(function() {
+          const input = $(this).closest('td').find("input");
+          const val = input.val();
+          input.val(parseInt(val) + 1);
+        });
+        $('.minus-btn').click(function(){
+          const input = $(this).closest('td').find("input");
+          const val = input.val();
+          if (val === 0) return;
+          input.val(parseInt(val) - 1);
         });
       });
 
