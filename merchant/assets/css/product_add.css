@@ -23,3 +23,21 @@
   top: 5px;
   background: white;
 }
+.custom-control.custom-checkbox {
+  z-index: inherit;
+  padding-left: 0;
+}
+.custom-control.custom-checkbox .custom-control-input {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  height: 100%;
+  width: 1.6rem;
+  height: 1.6rem;
+  top: .25rem;
+}
+.custom-control.custom-checkbox .custom-control-label::before,
+.custom-control.custom-checkbox .custom-control-label::after {
+  left: 0;
+}
