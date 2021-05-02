@@ -1,11 +1,15 @@
 .table-responsive .b-table td .b-input-counter .form-control {
   padding: 2px;
 }
+.input-container .form-group {
+  width: 100%;
+}
 .editable .input-container {
   display: none !important;
 }
 .editable .text-display {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 .edit .input-container {
   display: flex !important;

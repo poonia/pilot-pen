@@ -347,19 +347,19 @@
                             <a class="nav-item nav-link editable active" id="info-tab-p-1" data-toggle="tab" href="#info-tab-1" role="tab" aria-controls="nav-home" aria-selected="true">
                               <div class="text-display">
                                 <span>Product Info</span>
-                                <button class="btn btn-link m-0 p-0">
+                                <button class="btn btn-link m-0 p-0 edit_btn">
                                   <img src="../assets/img/edit.svg" alt="Edit">
                                 </button>
-                                <button class="btn btn-link m-0 p-0">
+                                <button class="btn btn-link m-0 p-0 delete_btn">
                                   <img src="../assets/img/cross.svg" alt="Delete" height="15" width="15">
                                 </button>
                               </div>
                               <div class="d-none p-0 input-container">
                                 <div class="form-group checked-btn-input my-0">
-                                  <input type="text" class="form-control" id="prd-title" placeholder="Add your product title here">
+                                  <input type="text" class="form-control" placeholder="Tab title">
                                 </div>
                                 <button class="btn btn-link p-0 m-0 checked-btn-wid-input save-cell">
-                                  <img src="../assets/img/icn-checked.svg" height="25" width="25" alt="">
+                                  <img src="../assets/img/icn-checked.svg" height="25" width="25" alt="Save">
                                 </button>
                               </div>
                             </a>
@@ -367,11 +367,25 @@
                           </div>
                         </nav>
                         <div class="tab-content py-3 px-3 px-sm-0 w-100" id="nav-tabContent">
-                          <div class="tab-pane py-5 fade show active" id="info-tab-1" role="tabpanel" aria-labelledby="info-tab-p-1">
-                            Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                          <div class="tab-pane py-3 fade active show editable" id="info-tab-1" role="tabpanel" aria-labelledby="info-tab-p-1">
+                            <div class="align-items-start justify-content-start text-display">
+                              <div class="desc">
+                                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                              </div>
+                              <button class="btn btn-link m-0 p-0 edit_btn">
+                                <img src="../assets/img/edit.svg" alt="Edit">
+                              </button>
+                            </div>
+                            <div class="input-container align-items-start">
+                              <div class="form-group mt-3">
+                                <textarea class="form-control" placeholder="Type description here" rows="10" ></textarea>
+                              </div>
+                              <button class="btn btn-link p-0 m-0 save-cell">
+                                <img src="../assets/img/icn-checked.svg" height="25" width="25" alt="Save">
+                              </button>
+                            </div>
                           </div>
                           <div class="tab-pane fade add-info-tab" id="add-info-tab" role="tabpanel" aria-labelledby="add-info-tab-p">
-
                             <div class="form-group mt-3 ">
                               <textarea class="form-control" id="descinfo" placeholder="Type description here" rows="10" ></textarea>
                             </div>
@@ -1276,11 +1290,15 @@
         });
 
         // Table edit functionality
-        $(".editable").on("click", function(e) {
-          $(this).removeClass("editable");
-          $(this).addClass("edit");
+        $("td.editable").on("click", function(e) {
+          $(this).removeClass("editable").addClass("edit");
         });
-        $(".save-cell").on("click", function(e) {
+        $(".editable .edit_btn").on("click", function(e) {
+          $(this).closest(".editable").addClass("edit").removeClass("editable");
+        });
+
+        // Table cell save
+        $("td .save-cell").on("click", function(e) {
           let parent = $(this).closest('td');
           let isTab = false;
           if (!parent.length) {
@@ -1289,10 +1307,37 @@
           }
           const val = parent.find("input").val();
           if (isTab) {
+            if (!val) return;
             parent.find(".text-display span").text(val);
           } else {
             parent.find(".text-display").text(val);
           }
+          parent.removeClass("edit").addClass("editable");
+          e.stopPropagation();
+        });
+
+        // Tabs title save
+        $(".nav-item .save-cell").on("click", function(e) {
+          const parent = $(this).closest(".nav-item");
+          const val = parent.find("input").val();
+
+          // If blank dont save
+          if (!val) return;
+
+          parent.find(".text-display span").text(val);
+          parent.removeClass("edit").addClass("editable");
+          e.stopPropagation();
+        });
+
+        // Tabs desc save
+        $(".tab-pane .save-cell").on("click", function(e) {
+          const parent = $(this).closest(".tab-pane");
+          const val = parent.find("textarea").val();
+          console.log('val = ', val)
+          // If blank dont save
+          if (!val) return;
+
+          parent.find(".text-display .desc").text(val);
           parent.removeClass("edit").addClass("editable");
           e.stopPropagation();
         });
