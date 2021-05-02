@@ -211,10 +211,11 @@
             <div class="row p-0 mb-5 mt-5 ">
               <div class="col-6 d-flex flex-column flex-grow-1" >
                 <div class="d-flex bg-grey p-4 h-100 flex-column mt-5 product-imgs">
-                  <!-- <div class="file-upload mb-5 mainContainer">
-                    <div class="image-upload-wrap">
-                      <input class="file-upload-input" type='file' onchange="readURL(this);" accept=".jpg" />
-                      <div class="drag-text d-flex flex-column text-center align-items-center pt-5 pb-5 min-h-300 justify-content-center">
+                  <div class="mb-5 mainContainer d-flex">
+                    <div class="image-upload-wrap flex-grow-1">
+                      <!-- <input class="file-upload-input" type='file' onchange="readURL(this);" accept=".jpg" /> -->
+                      <input class="file-upload-input" type='button' onclick="readURL(this);" />
+                      <div class="d-flex flex-column align-items-center min-h-300 justify-content-center">
                         <img
                           src="../assets/img/plus.svg"
                           alt="add"
@@ -224,22 +225,22 @@
                         <span class="font-rw-r-18">Add image</span>
                       </div>
                     </div>
-                    <div class="file-upload-content">
+                    <!-- <div class="file-upload-content">
                       <img class="file-upload-image" src="#" alt="your image" />
                       <div class="image-title-wrap">
-                        <button type="button" onclick="removeUpload()" class="btn btn-link">
+                        <button type="button" class="btn btn-link">
                           <img src="../assets/img/delete-icon.svg" alt="Remove Image">
                         </button>
                       </div>
-                    </div>
-                  </div> -->
-                  <div class="mb-5 mainContainer d-flex justify-content-center align-items-center">
-                    <img src="http://via.placeholder.com/350x200/f2ebe5/222.jpg?text=No Image" class="img-fluid">
+                    </div> -->
                   </div>
+                  <!-- <div class="mb-5 mainContainer d-flex justify-content-center align-items-center">
+                    <img src="http://via.placeholder.com/350x200/f2ebe5/222.jpg?text=No Image" class="img-fluid">
+                  </div> -->
                   <div class="d-flex bg-grey p-4 h-100 flex-column">
                     <div class="row align-items-center">
                       <div class="col-12 col-carousel">
-                        <div class="owl-carousel carousel-product-img-modal side-nav-owl">
+                        <div class="owl-carousel carousel-product-img-profile side-nav-owl">
                           <div class="owl-carousel-item-container newImgContainer">
                             <div class="add-card d-flex flex-column bg-white m-0">
                               <input class="file-upload-input" type="file" onchange="uploadImgCarousel(this);" accept=".jpg">
@@ -390,7 +391,7 @@
                               <textarea class="form-control" id="descinfo" placeholder="Type description here" rows="10" ></textarea>
                             </div>
                             <button class="btn btn-link p-0 m-0">
-                              <img src="../assets/img/icn-checked.svg" height="25" width="25" alt="">
+                              <img src="../assets/img/icn-checked.svg" height="25" width="25" alt="Save">
                             </button>
                           </div>
 
@@ -759,14 +760,11 @@
                       width="30"
                     />
                     <span class="font-rw-r-18">Add image pack</span>
-
                   </div>
-
-
-
                 </div>
               </div>
-              <div class="col-sm-8 d-flex flex-column flex-grow-1">
+
+              <div class="col-sm-8 d-flex flex-column flex-grow-1 product-imgs">
                 <div class="d-flex bg-grey p-4 h-100 pt-5">
                   <div class="col-7 mainContainer">
                     <img src="http://via.placeholder.com/350x200/f2ebe5/222.jpg?text=Hello" class="img-fluid">
@@ -1268,7 +1266,7 @@
         });
 
         // owl for product image in modal
-        $('.carousel-product-img-modal').owlCarousel({
+        $('.carousel-product-img-modal, .carousel-product-img-profile').owlCarousel({
           items: 3,
           loop: false,
           autoplay: false,
@@ -1357,7 +1355,7 @@
 
         // Carousel image click
         $("body").on("click", ".col-carousel .owl-carousel-item-container", function(e) {
-          if ($(this).hasClass("newImgContainer")){
+          if ($(this).hasClass("newImgContainer")) {
             return;
           } else if ($(e.target).parent("button").length &&
             $(e.target).parent("button").hasClass("remove-carousel-img")) {
@@ -1366,7 +1364,9 @@
           }
 
           const imgSrc = $(this).children("img").attr("src");
-          $(".mainContainer img").attr("src", imgSrc);
+          // $(".mainContainer img").attr("src", imgSrc);
+          const newImg = `<img src=${imgSrc} class="img-fluid">`;
+          $(this).closest(".product-imgs").find(".mainContainer").html(newImg);
         });
       });
 
@@ -1411,6 +1411,10 @@
         const index = $(elem).parent().index();
         owlCarousel.trigger('remove.owl.carousel', index)
           .trigger('refresh.owl.carousel');
+      }
+
+      function readURL(input) {
+        $(".owl-carousel.carousel-product-img-profile .file-upload-input").click();
       }
 
       // file upload
