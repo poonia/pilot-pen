@@ -1,0 +1,44 @@
+/**
+ * jQuery Editable Select
+ * Indri Muska <indrimuska@gmail.com>
+ *
+ * Source on GitHub @ https://github.com/indrimuska/jquery-editable-select
+ */
+input.es-input {
+  background-image: linear-gradient(
+  45deg
+  , transparent 50%, black 50%), linear-gradient(
+  135deg
+  , black 50%, transparent 50%)!important;
+  background-position: calc(100% - 20px) calc(0.7em + 2px), calc(100% - 15px) calc(0.7em + 2px)!important;
+  background-size: 5px 5px, 5px 5px!important;
+  background-repeat: no-repeat!important;
+}
+
+.es-list {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #7CCDCE;
+  display: none;
+  z-index: 1000;
+  background: #fff;
+  max-height: 160px;
+  overflow-y: auto;
+  -moz-box-shadow: 0 2px 3px #ccc;
+  -webkit-box-shadow: 0 2px 3px #ccc;
+  box-shadow: 0 2px 3px #ccc;
+  font-size: 16px;
+}
+.es-list li {
+  display: block;
+  padding: 0px 0px 0px 15px!important;
+  margin: 0;
+}
+.es-list li.selected {
+  background: #7CCDCE;
+  color: #fff;
+}
+.es-list li[disabled] {
+  opacity: 0.5;
+}

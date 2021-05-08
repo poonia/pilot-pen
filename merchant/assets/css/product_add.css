@@ -41,3 +41,13 @@
 .custom-control.custom-checkbox .custom-control-label::after {
   left: 0;
 }
+.image-pack-container {
+  overflow-y: scroll;
+  max-height: 550px;
+}
+.b-img-pack-card .custom-control-label {
+  padding-left: 20px;
+}
+#sortable li {
+  list-style: none !important;
+}

@@ -495,15 +495,22 @@ select.form-control {
   background-repeat: no-repeat;
 }
 
-select.form-control:focus {
+select.form-control:focus,
+.es-input.open {
   background-image: linear-gradient(45deg, transparent 50%, black 50%),
     linear-gradient(135deg, black 50%, transparent 50%);
   background-position: calc(100% - 20px) calc(0.7em + 2px),
     calc(100% - 15px) calc(0.7em + 2px);
   background-size: 5px 5px, 5px 5px, 1px 1.5em;
   background-repeat: no-repeat;
-  border-color: green;
+  border-color: #7CCDCE !important;
   outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(124 205 206 / 25%);
+}
+
+.form-control:focus {
+  border-color: #7CCDCE !important;
+  box-shadow: 0 0 0 0.2rem rgb(124 205 206 / 25%);
 }
 
 select:-moz-focusring {
@@ -1188,10 +1195,6 @@ input[type='number'] {
 }
 
 /* Color picker */
-/*.colorpicker-component i {
-  border-radius: 0px 25px 25px 0px !important;
-  border-left: none;
-}*/
 .colorpicker-component .input-group-addon {
   padding: 7px 11px 6px 7px;
   border-radius: 0 25px 25px 0;
