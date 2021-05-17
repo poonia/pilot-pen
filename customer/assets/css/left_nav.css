@@ -1,7 +1,7 @@
 .sidebar {
   min-height: 100vh;
   height: 100%;
-  margin: 0 16px 0 0;
+  margin: 0;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   background-color: #221f1f;
 }
@@ -30,6 +30,8 @@
   margin: 0 0 25px;
   background-color: #7ccdce;
   font-weight: normal;
+  padding-top: 10px;
+    text-transform: capitalize;
 }
 .sidebar-dark a.nav-link:last-child {
   border-bottom: none;
