@@ -164,12 +164,34 @@ body {
   font-size: 1.8rem;
   font-weight: 600;
 }
+.font-rw-sb-20 {
+  font-family: 'Raleway-R', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.font-rw-sb-36 {
+  font-family: 'Raleway-R', sans-serif;
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+.font-rw-sb-40 {
+  font-family: 'Raleway-R', sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+}
 
 .font-rw-b-18 {
   font-family: 'Raleway-R', sans-serif;
   font-size: 1.8rem;
   font-weight: 900;
 }
+
+.font-rw-b-20 {
+  font-family: 'Raleway-R', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
 
 .font-clr-coral {
   color: #f48070;
@@ -483,6 +505,20 @@ select.form-control:focus {
   border-color: green;
   outline: 0;
 }
+
+select.black.form-control {
+  background-image: linear-gradient(45deg, transparent 50%, #9a9a9a 50%),
+    linear-gradient(135deg, #9a9a9a 50%, transparent 50%);
+  background-color: #222;
+  color: #fff;
+}
+
+select.black.form-control:focus {
+  background-image: linear-gradient(45deg, transparent 50%, #9a9a9a 50%),
+    linear-gradient(135deg, #9a9a9a 50%, transparent 50%);
+}
+
+
 
 select:-moz-focusring {
   color: transparent;
@@ -848,10 +884,15 @@ input.form-control[readonly] {
 /* Featured item ends */
 
 /* Featured shop starts */
+.shop-card {
+  display:flex;
+  flex-direction: column;
+}
 .shop-card.card {
   width: 255px;
   border-radius: 12px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  margin: 1rem;
 }
 .shop-card .card-header {
   color: #ffffff;
@@ -996,3 +1037,160 @@ input.form-control[readonly] {
   color: #d40000;
   background-color: rgba(218,49,49,0.13);
 }
+
+.form-card {
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 17px 30px 0 rgb(0 0 0 / 13%);
+  background-color: #ffffff;
+  min-height: 65vh;
+}
+
+
+
+/* listing page */
+.card-listing-wrapper {
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+.price-filter-group .list-group-item,
+.transparent-list-group .list-group-item{
+  background: transparent;
+  border-width: 0;
+  padding-left: 0;
+}
+.mobile-filter-bar {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  background-color: #f5f5f5;
+  height: 50px;
+  width: 100%;
+  margin: 0;
+}
+.mob-filtr-btn {
+  width: calc(50% - 2px);
+  display: inline-block;
+  border-right: 1px solid #e0e0e0;
+  height: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+.mob-filtr-btn-scnd {
+  border-right-width: 0;
+}
+
+.show-filters .listing-container {
+  display:none;
+}
+
+.mobile-filter-wrapper {
+  height: calc(100vh - 115px);
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    top: 0;
+}
+.back-arrow {
+  height: 50px;
+  width: 35px;
+}
+.mob-filter-cat-label {
+  width:100%;
+  padding: 10px;
+  display: block;
+  color: #868686;
+}
+.mob-filter-cat-label:active,.mob-filter-cat-label:focus {
+  color: #868686;
+  text-decoration: none;
+}
+
+.mob-filter-cat-label.active {
+  background: #fff;
+}
+
+.facet-apply-btn {
+  padding: 10px 30px;
+  border-radius: 7px;
+  background-color: #f48070;
+  display: inline-block;
+  width: fit-content;
+}
+
+/* detail */
+.carousel-product-img.side-nav-owl .owl-stage-outer {
+  margin: 0;
+}
+.selected-attrb-items.colors {
+  min-width: 60px;
+  align-items: center;
+}
+
+
+.selected-attrb-items.colors.active .delete-btn,
+.selected-attrb-items.sizes.active .delete-btn {
+  margin-top: 10px !important;
+  display: block;
+}
+
+.selected-attrb-items.colors .selected-attrb-item {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  margin-top: 10px;
+}
+
+.selected-attrb-items.colors.add-option .selected-attrb-item {
+  border: 1px solid #c9c9c9;
+  padding-top: 5px;
+  padding-left: 1px;
+}
+
+.selected-attrb-items.colors.active .selected-attrb-item {
+  box-shadow: 0px 0px 0px 2px #fff, 0px 0px 0px 6px #7ccdce;
+}
+
+.selected-attrb-items.colors .selected-attrb-item .attrb-value,
+.selected-attrb-items.colors .selected-attrb-item .attrb-price {
+  display: none;
+}
+
+.attribute-block .form-check > input[type='radio'] + *::before {
+  top: 7px;
+}
+@media (max-width: 575px) {
+  .carousel-product-img.owl-carousel .owl-nav button.owl-next{
+    margin-right: 10px;
+    margin-top: -10px;
+  }
+  .carousel-product-img.owl-carousel .owl-nav button.owl-prev {
+    margin-left: 10px;
+    margin-top: -10px;
+  }
+
+
+}
+
+@media (min-width: 576px) {
+  .owl-carousel-item-box {
+    height: 100px;
+  }
+
+  .attribute-block {
+    order: 1;
+  }
+  .color-block {
+    order: 2;
+  }
+  .quantity-block {
+    order: 3;
+  }
+  .cost-block {
+    order: 4;
+  }
+  .buy-block {
+    order: 5;
+  }
+ }

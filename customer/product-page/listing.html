@@ -1,0 +1,2067 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Bukit</title>
+
+    <!-- Custom fonts for this template-->
+
+    <!-- CSS for the framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+
+    <!-- Project Icons -->
+    <script src="https://kit.fontawesome.com/85e68fdb5b.js" crossorigin="anonymous"></script>
+
+    <!-- Custom styles for this template-->
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/left_nav.css" />
+    <link rel="stylesheet" href="../assets/css/home.css" />
+    <link rel="stylesheet" href="../assets/css/contact.css" />
+
+    <!-- Custom Vendor CSS used -->
+    <link rel="stylesheet" href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" />
+</head>
+
+<body id="page-top">
+    <!-- Top Navigation Starts -->
+    <nav class="navbar navbar-dark header d-flex">
+        <button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="sidenav"
+            data-target=".sidenav-left">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mr-auto" href="#">
+            <img src="../assets/img/group-1216.svg" class="logo" />
+        </a>
+        <div class="d-flex align-items-center">
+            <form class="d-md-flex d-none search-input-container">
+                <div class="">
+                    <select class="header-search-select form-control">
+                        <option selected="">All</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="flex-grow-1 w-75">
+                    <input class="form-control mr-sm-2 header-search" type="search"
+                        placeholder="Search Bukit for your favourites" aria-label="Search" />
+                </div>
+            </form>
+            <a class="d-md-none" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                aria-controls="collapseExample">
+                <img src="../assets/img/search-icon.svg" class="user-logo search-icon" />
+            </a>
+        </div>
+        <div class="">
+            <span class="navbar-text d-flex align-items-center">
+                <img src="../assets/img/group-1234.svg" class="user-logo" />
+                <span>Login</span>
+            </span>
+        </div>
+    </nav>
+    <!-- Mobile search container starts -->
+    <div class="collapse navbar navbar-dark header d-md-none" id="collapseExample">
+        <form class="d-flex search-input-container m-auto w-100 d-md-none">
+            <div class="">
+                <select class="header-search-select form-control h-100">
+                    <option selected="">All</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="flex-grow-1 w-75">
+                <input class="form-control mr-sm-2 header-search h-auto" type="search"
+                    placeholder="Search Bukit for your favourites" aria-label="Search" />
+            </div>
+        </form>
+    </div>
+    <!-- Mobile search container ends -->
+    <!-- Top Navigation Ends -->
+
+    <!-- Page Wrapper -->
+    <div id="wrapper" class="container">
+        <div class="row">
+            <div class=" col-sm-4 col-md-3 col-lg-2 px-0 ">
+                <!-- Sidebar -->
+                <div class="d-block d-sm-none row mobile-filter-bar">
+                    <a href="#" class="col font-rw-sb-20 mob-filtr-btn">Sort</a>
+                    <a href="#" class="col font-rw-sb-20 mob-filtr-btn mob-filtr-btn-scnd">filter</a>
+                </div>
+                <!-- desktop filter  -->
+                <nav class="nav flex-column sidebar sidebar-dark text-white p-5 d-none d-sm-block">
+                    <h3>Filter</h3>
+                    <form class="row">
+
+                        <div class="col-12 mt-4">
+                            <label for="category-filter" class="form-label d-block">Category</label>
+                            <select id="category-filter" class="form-control d-block w-100 rounded black mt-2">
+                              <option selected>All</option>
+                              <option>Shirt</option>
+                              <option>...</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 mt-4">
+                            <label for="sort-filter" class="form-label d-block ">Sort By</label>
+                            <select id="sort-filter" class="form-control d-block w-100 rounded black mt-2">
+                              <option selected>Latest</option>
+                              <option>Oldest</option>
+                              <option>...</option>
+                            </select>
+                        </div>
+
+
+                        <div class="col-12 mt-4">
+                            <label for="price" class="form-label d-block w-100">Price</label>
+                            <ul class="list-group price-filter-group">
+                                <li class="list-group-item">
+                                    <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                        <input type="checkbox" class="custom-control-input" id="checkbox-id-1"  />
+                                        <label class="custom-control-label" for="checkbox-id-1">Below $10</label>
+                                      </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                        <input type="checkbox" class="custom-control-input" id="checkbox-id-2" checked />
+                                        <label class="custom-control-label" for="checkbox-id-2">$10 - $25</label>
+                                      </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                        <input type="checkbox" class="custom-control-input" id="checkbox-id-3"  />
+                                        <label class="custom-control-label" for="checkbox-id-3">$25 - $50</label>
+                                      </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                        <input type="checkbox" class="custom-control-input" id="checkbox-id-4"  />
+                                        <label class="custom-control-label" for="checkbox-id-4">$50 - $100</label>
+                                      </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                        <input type="checkbox" class="custom-control-input" id="checkbox-id-5"  />
+                                        <label class="custom-control-label" for="checkbox-id-5">$100 - $500</label>
+                                      </div>
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="col-12 mt-4">
+                           <a href="" class=""> Clear All</a>
+                        </div>
+
+                    </form>
+
+                </nav>
+                <!-- mobile filter -->
+                <div class="mobile-filter-wrapper d-none d-sm-none">
+                    <div class="mobile-filter-bar d-flex justify-content-between ">
+                        <a href="#" class="font-rw-sb-20 back-to-listing"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="back-arrow" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                          </svg> Filters</a>
+                        <a href="#" class="text-danger font-rw-sb-20 pr-5 pt-3">Clear All</a>
+                    </div>
+                    <div class="row h-100 m-0">
+                        <div class="col-5 bg-grey p-0 d-flex flex-column justify-content-between ">
+                            <ul class="list-unstyled list-group transparent-list-group m-0">
+                                <li class="list-group-item p-0">
+                                    <a href="#" id="category-filter" class="mob-filter-cat-label font-rw-sb-20 active">
+                                        Category
+                                    </a>
+                                </li>
+                                <li class="list-group-item p-0">
+                                    <a href="#" id="price-filter"  class="mob-filter-cat-label font-rw-sb-20">
+                                        Price
+                                    </a>
+                                </li>
+                                <li class="list-group-item p-0">
+                                    <a href="#" id="filter-a-filter" class="mob-filter-cat-label font-rw-sb-20">
+                                        Filter A
+                                    </a>
+                                </li>
+                                <li class="list-group-item p-0">
+                                    <a href="#" id="filter-b-filter" class="mob-filter-cat-label font-rw-sb-20">
+                                        Filter B
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="d-flex flex-column text-left pl-3 pb-5">
+                                <strong>1,764</strong>
+                                <div class="text-muted">items found</div>
+                            </div>
+                        </div>
+                        <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis numquam laudantium ipsa eligendi in vero eius facilis est consectetur, sequi voluptates illum quisquam. Unde nisi quisquam accusamus doloribus odio. -->
+                        <div class="col-7 bg-white mob-filter-facets">
+                            <ul class="list-unstyled h-100">
+                                <li class="mob-filter-facet-container h-100" data-id="category-filter">
+                                    <div class="d-flex flex-column justify-content-between h-100">
+                                        <ul class="list-group transparent-list-group mt-4 px-4">
+                                            <li class="list-group-item">
+                                                <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox-id-1"  />
+                                                    <label class="custom-control-label" for="checkbox-id-1">Lorem ipsum</label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox-id-2" checked />
+                                                    <label class="custom-control-label" for="checkbox-id-2">consectetur</label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox-id-3"  />
+                                                    <label class="custom-control-label" for="checkbox-id-3">perspiciatis</label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox-id-4"  />
+                                                    <label class="custom-control-label" for="checkbox-id-4">laudantium</label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox-id-5"  />
+                                                    <label class="custom-control-label" for="checkbox-id-5">eligendi</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="mb-5 text-right">
+                                            <button class="btn btn-danger facet-apply-btn ">Apply</button>
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                                <li class="d-none mob-filter-facet-container h-100" data-id="price-filter">
+                                    <div class="d-flex flex-column justify-content-between h-100">
+                                        <ul class="list-group transparent-list-group mt-4 px-4">
+                                            <li class="list-group-item">
+                                                <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox-id-1"  />
+                                                    <label class="custom-control-label" for="checkbox-id-1">Below $10</label>
+                                                  </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox-id-2" checked />
+                                                    <label class="custom-control-label" for="checkbox-id-2">$10 - $25</label>
+                                                  </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox-id-3"  />
+                                                    <label class="custom-control-label" for="checkbox-id-3">$25 - $50</label>
+                                                  </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox-id-4"  />
+                                                    <label class="custom-control-label" for="checkbox-id-4">$50 - $100</label>
+                                                  </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox-id-5"  />
+                                                    <label class="custom-control-label" for="checkbox-id-5">$100 - $500</label>
+                                                  </div>
+                                            </li>
+                                        </ul>
+                                        <div class="mb-5 text-right">
+                                            <button class="btn btn-danger facet-apply-btn ">Apply</button>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li class="d-none mob-filter-facet-container h-100" data-id="filter-a-filter">
+                                    <div class="d-flex flex-column justify-content-between h-100">
+                                        <ul class="list-group transparent-list-group mt-4 px-4">
+                                            <li class="list-group-item">
+                                                <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox-id-1"  />
+                                                    <label class="custom-control-label" for="checkbox-id-1">voluptates</label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox-id-2" checked />
+                                                    <label class="custom-control-label" for="checkbox-id-2">consectetur</label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox-id-3"  />
+                                                    <label class="custom-control-label" for="checkbox-id-3">quisquam</label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox-id-4"  />
+                                                    <label class="custom-control-label" for="checkbox-id-4">laudantium</label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox-id-5"  />
+                                                    <label class="custom-control-label" for="checkbox-id-5">eligendi</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="mb-5 text-right">
+                                            <button class="btn btn-danger facet-apply-btn ">Apply</button>
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                                <li class="d-none mob-filter-facet-container h-100" data-id="filter-b-filter">
+                                    <div class="d-flex flex-column justify-content-between h-100">
+                                        <ul class="list-group transparent-list-group mt-4 px-4">
+                                            <li class="list-group-item">
+                                                <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox-id-1"  />
+                                                    <label class="custom-control-label" for="checkbox-id-1">Lorem ipsum</label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox-id-2" checked />
+                                                    <label class="custom-control-label" for="checkbox-id-2">consectetur</label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox-id-3"  />
+                                                    <label class="custom-control-label" for="checkbox-id-3">perspiciatis</label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox-id-4"  />
+                                                    <label class="custom-control-label" for="checkbox-id-4">laudantium</label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="custom-control custom-checkbox form-check-inline d-inline-flex mr-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox-id-5"  />
+                                                    <label class="custom-control-label" for="checkbox-id-5">eligendi</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="mb-5 text-right">
+                                            <button class="btn btn-danger facet-apply-btn ">Apply</button>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End of Sidebar -->
+            </div>
+            <div class="col-12 col-sm-8 col-md-9 col-lg-10 listing-container">
+                <!-- Content Wrapper -->
+
+                <div class="row mt-5">
+                    <div class="col my-4 px-5">
+                        <h2 class="font-qs-b-30">
+                            Local shop result for <span class="text-primary">clothing</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col card-listing-wrapper px-4 justify-content-center justify-content-md-start">
+                        <div class="shop-card card">
+                            <div class="card-header">
+                              <div class="card-header-icon">
+                                <img
+                                    src="../assets/img/image-18.jpg"
+                                    srcset="../assets/img/image-18@2x.jpg 2x,
+                                            ../assets/img/image-18@3x.jpg 3x"
+                                    class="Image-18"
+                                >
+                              </div>
+                              <div class="card-header-title">
+                                Great Bags Vendor
+                              </div>
+                            </div>
+                            <div class="card-body p-0">
+                              <div class="row no-gutters">
+                                <div class="col-5">
+                                  <svg class="bd-placeholder-img" width="100%" height="135" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                                </div>
+                                <div class="col-7 px-2 d-flex flex-column justify-content-between">
+                                  <div>
+                                  <button type="button" class="btn btn-sm btn-block">Bags</button>
+                                  <button type="button" class="btn btn-sm btn-block">Accessories</button>
+                                </div>
+                                <div>
+                                  <p class="card-text sub-text">
+                                    <i class="bi bi-geo-alt"></i> 10mi
+                                  </p>
+                                  <p class="card-text text-center pb-3">
+                                    <button type="button" class="btn btn-sm px-4 main-action-button">More</button>
+                                  </p>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="shop-card card">
+                            <div class="card-header">
+                              <div class="card-header-icon">
+                                <img
+                                    src="../assets/img/image-18.jpg"
+                                    srcset="../assets/img/image-18@2x.jpg 2x,
+                                            ../assets/img/image-18@3x.jpg 3x"
+                                    class="Image-18"
+                                >
+                              </div>
+                              <div class="card-header-title">
+                                Great Bags Vendor
+                              </div>
+                            </div>
+                            <div class="card-body p-0">
+                              <div class="row no-gutters">
+                                <div class="col-5">
+                                  <svg class="bd-placeholder-img" width="100%" height="135" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                                </div>
+                                <div class="col-7 px-2 d-flex flex-column justify-content-between">
+                                  <div>
+                                  <button type="button" class="btn btn-sm btn-block">Bags</button>
+                                  <button type="button" class="btn btn-sm btn-block">Accessories</button>
+                                </div>
+                                <div>
+                                  <p class="card-text sub-text">
+                                    <i class="bi bi-geo-alt"></i> 10mi
+                                  </p>
+                                  <p class="card-text text-center pb-3">
+                                    <button type="button" class="btn btn-sm px-4 main-action-button">More</button>
+                                  </p>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="shop-card card">
+                            <div class="card-header">
+                              <div class="card-header-icon">
+                                <img
+                                    src="../assets/img/image-18.jpg"
+                                    srcset="../assets/img/image-18@2x.jpg 2x,
+                                            ../assets/img/image-18@3x.jpg 3x"
+                                    class="Image-18"
+                                >
+                              </div>
+                              <div class="card-header-title">
+                                Great Bags Vendor
+                              </div>
+                            </div>
+                            <div class="card-body p-0">
+                              <div class="row no-gutters">
+                                <div class="col-5">
+                                  <svg class="bd-placeholder-img" width="100%" height="135" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                                </div>
+                                <div class="col-7 px-2 d-flex flex-column justify-content-between">
+                                  <div>
+                                  <button type="button" class="btn btn-sm btn-block">Bags</button>
+                                  <button type="button" class="btn btn-sm btn-block">Accessories</button>
+                                </div>
+                                <div>
+                                  <p class="card-text sub-text">
+                                    <i class="bi bi-geo-alt"></i> 10mi
+                                  </p>
+                                  <p class="card-text text-center pb-3">
+                                    <button type="button" class="btn btn-sm px-4 main-action-button">More</button>
+                                  </p>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="shop-card card">
+                            <div class="card-header">
+                              <div class="card-header-icon">
+                                <img
+                                    src="../assets/img/image-18.jpg"
+                                    srcset="../assets/img/image-18@2x.jpg 2x,
+                                            ../assets/img/image-18@3x.jpg 3x"
+                                    class="Image-18"
+                                >
+                              </div>
+                              <div class="card-header-title">
+                                Great Bags Vendor
+                              </div>
+                            </div>
+                            <div class="card-body p-0">
+                              <div class="row no-gutters">
+                                <div class="col-5">
+                                  <svg class="bd-placeholder-img" width="100%" height="135" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                                </div>
+                                <div class="col-7 px-2 d-flex flex-column justify-content-between">
+                                  <div>
+                                  <button type="button" class="btn btn-sm btn-block">Bags</button>
+                                  <button type="button" class="btn btn-sm btn-block">Accessories</button>
+                                </div>
+                                <div>
+                                  <p class="card-text sub-text">
+                                    <i class="bi bi-geo-alt"></i> 10mi
+                                  </p>
+                                  <p class="card-text text-center pb-3">
+                                    <button type="button" class="btn btn-sm px-4 main-action-button">More</button>
+                                  </p>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+
+                        <div class="shop-card card">
+                            <div class="card-header">
+                              <div class="card-header-icon">
+                                <img
+                                    src="../assets/img/image-18.jpg"
+                                    srcset="../assets/img/image-18@2x.jpg 2x,
+                                            ../assets/img/image-18@3x.jpg 3x"
+                                    class="Image-18"
+                                >
+                              </div>
+                              <div class="card-header-title">
+                                Great Bags Vendor
+                              </div>
+                            </div>
+                            <div class="card-body p-0">
+                              <div class="row no-gutters">
+                                <div class="col-5">
+                                  <svg class="bd-placeholder-img" width="100%" height="135" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                                </div>
+                                <div class="col-7 px-2 d-flex flex-column justify-content-between">
+                                  <div>
+                                  <button type="button" class="btn btn-sm btn-block">Bags</button>
+                                  <button type="button" class="btn btn-sm btn-block">Accessories</button>
+                                </div>
+                                <div>
+                                  <p class="card-text sub-text">
+                                    <i class="bi bi-geo-alt"></i> 10mi
+                                  </p>
+                                  <p class="card-text text-center pb-3">
+                                    <button type="button" class="btn btn-sm px-4 main-action-button">More</button>
+                                  </p>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+
+                        <div class="shop-card card">
+                            <div class="card-header">
+                              <div class="card-header-icon">
+                                <img
+                                    src="../assets/img/image-18.jpg"
+                                    srcset="../assets/img/image-18@2x.jpg 2x,
+                                            ../assets/img/image-18@3x.jpg 3x"
+                                    class="Image-18"
+                                >
+                              </div>
+                              <div class="card-header-title">
+                                Great Bags Vendor
+                              </div>
+                            </div>
+                            <div class="card-body p-0">
+                              <div class="row no-gutters">
+                                <div class="col-5">
+                                  <svg class="bd-placeholder-img" width="100%" height="135" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                                </div>
+                                <div class="col-7 px-2 d-flex flex-column justify-content-between">
+                                  <div>
+                                  <button type="button" class="btn btn-sm btn-block">Bags</button>
+                                  <button type="button" class="btn btn-sm btn-block">Accessories</button>
+                                </div>
+                                <div>
+                                  <p class="card-text sub-text">
+                                    <i class="bi bi-geo-alt"></i> 10mi
+                                  </p>
+                                  <p class="card-text text-center pb-3">
+                                    <button type="button" class="btn btn-sm px-4 main-action-button">More</button>
+                                  </p>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+
+                        <div class="shop-card card">
+                            <div class="card-header">
+                              <div class="card-header-icon">
+                                <img
+                                    src="../assets/img/image-18.jpg"
+                                    srcset="../assets/img/image-18@2x.jpg 2x,
+                                            ../assets/img/image-18@3x.jpg 3x"
+                                    class="Image-18"
+                                >
+                              </div>
+                              <div class="card-header-title">
+                                Great Bags Vendor
+                              </div>
+                            </div>
+                            <div class="card-body p-0">
+                              <div class="row no-gutters">
+                                <div class="col-5">
+                                  <svg class="bd-placeholder-img" width="100%" height="135" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                                </div>
+                                <div class="col-7 px-2 d-flex flex-column justify-content-between">
+                                  <div>
+                                  <button type="button" class="btn btn-sm btn-block">Bags</button>
+                                  <button type="button" class="btn btn-sm btn-block">Accessories</button>
+                                </div>
+                                <div>
+                                  <p class="card-text sub-text">
+                                    <i class="bi bi-geo-alt"></i> 10mi
+                                  </p>
+                                  <p class="card-text text-center pb-3">
+                                    <button type="button" class="btn btn-sm px-4 main-action-button">More</button>
+                                  </p>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+
+                        <div class="shop-card card">
+                            <div class="card-header">
+                              <div class="card-header-icon">
+                                <img
+                                    src="../assets/img/image-18.jpg"
+                                    srcset="../assets/img/image-18@2x.jpg 2x,
+                                            ../assets/img/image-18@3x.jpg 3x"
+                                    class="Image-18"
+                                >
+                              </div>
+                              <div class="card-header-title">
+                                Great Bags Vendor
+                              </div>
+                            </div>
+                            <div class="card-body p-0">
+                              <div class="row no-gutters">
+                                <div class="col-5">
+                                  <svg class="bd-placeholder-img" width="100%" height="135" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                                </div>
+                                <div class="col-7 px-2 d-flex flex-column justify-content-between">
+                                  <div>
+                                  <button type="button" class="btn btn-sm btn-block">Bags</button>
+                                  <button type="button" class="btn btn-sm btn-block">Accessories</button>
+                                </div>
+                                <div>
+                                  <p class="card-text sub-text">
+                                    <i class="bi bi-geo-alt"></i> 10mi
+                                  </p>
+                                  <p class="card-text text-center pb-3">
+                                    <button type="button" class="btn btn-sm px-4 main-action-button">More</button>
+                                  </p>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="shop-card card">
+                            <div class="card-header">
+                              <div class="card-header-icon">
+                                <img
+                                    src="../assets/img/image-18.jpg"
+                                    srcset="../assets/img/image-18@2x.jpg 2x,
+                                            ../assets/img/image-18@3x.jpg 3x"
+                                    class="Image-18"
+                                >
+                              </div>
+                              <div class="card-header-title">
+                                Great Bags Vendor
+                              </div>
+                            </div>
+                            <div class="card-body p-0">
+                              <div class="row no-gutters">
+                                <div class="col-5">
+                                  <svg class="bd-placeholder-img" width="100%" height="135" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                                </div>
+                                <div class="col-7 px-2 d-flex flex-column justify-content-between">
+                                  <div>
+                                  <button type="button" class="btn btn-sm btn-block">Bags</button>
+                                  <button type="button" class="btn btn-sm btn-block">Accessories</button>
+                                </div>
+                                <div>
+                                  <p class="card-text sub-text">
+                                    <i class="bi bi-geo-alt"></i> 10mi
+                                  </p>
+                                  <p class="card-text text-center pb-3">
+                                    <button type="button" class="btn btn-sm px-4 main-action-button">More</button>
+                                  </p>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col my-4 px-5">
+                        <h2 class="font-qs-b-30">
+                            Local items for <span class="text-primary">clothing</span>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col card-listing-wrapper px-4 justify-content-center justify-content-md-start">
+                        <div class="product-card card ">
+                            <div class="card-header">
+                                <div class="card-header-icon">
+                                    <img src="../assets/img/image-18.jpg" class="Image-18" />
+                                </div>
+                                <div class="card-header-title">Great Basin
+                                    Soap co.</div>
+                            </div>
+                            <div class="card-body p-0 pb-2">
+                                <img class="img-fluid"
+                                    src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                                <div class="card-body-bottom pt-2 px-3">
+                                    <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                                    <div class="d-flex justify-content-end mt-2">
+                                        <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div class="">
+                                            <p class="card-text sub-text d-flex flex-column">
+                                                <img src="../assets/img/location-marker-muted-14X17.svg"
+                                                    width="14" height="17" alt="">
+                                                <span>10 mi.</span>
+                                            </p>
+                                        </div>
+                                        <div class="align-self-end w-fit-content">
+                                            <button type="button"
+                                                class="btn btn-sm main-action-button w-fit-content">
+                                                <div class="button-icon">
+                                                    <img src="../assets/img/shoppping-bag.svg" height="18"
+                                                        width="18" class="buy-bag" />
+                                                </div>
+                                                <div class="btn-text">Buy</div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card card ">
+                            <div class="card-header">
+                                <div class="card-header-icon">
+                                    <img src="../assets/img/image-18.jpg" class="Image-18" />
+                                </div>
+                                <div class="card-header-title">Great Basin
+                                    Soap co.</div>
+                            </div>
+                            <div class="card-body p-0 pb-2">
+                                <img class="img-fluid"
+                                    src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                                <div class="card-body-bottom pt-2 px-3">
+                                    <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                                    <div class="d-flex justify-content-end mt-2">
+                                        <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div class="">
+                                            <p class="card-text sub-text d-flex flex-column">
+                                                <img src="../assets/img/location-marker-muted-14X17.svg"
+                                                    width="14" height="17" alt="">
+                                                <span>10 mi.</span>
+                                            </p>
+                                        </div>
+                                        <div class="align-self-end w-fit-content">
+                                            <button type="button"
+                                                class="btn btn-sm main-action-button w-fit-content">
+                                                <div class="button-icon">
+                                                    <img src="../assets/img/shoppping-bag.svg" height="18"
+                                                        width="18" class="buy-bag" />
+                                                </div>
+                                                <div class="btn-text">Buy</div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card card ">
+                            <div class="card-header">
+                                <div class="card-header-icon">
+                                    <img src="../assets/img/image-18.jpg" class="Image-18" />
+                                </div>
+                                <div class="card-header-title">Great Basin
+                                    Soap co.</div>
+                            </div>
+                            <div class="card-body p-0 pb-2">
+                                <img class="img-fluid"
+                                    src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                                <div class="card-body-bottom pt-2 px-3">
+                                    <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                                    <div class="d-flex justify-content-end mt-2">
+                                        <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div class="">
+                                            <p class="card-text sub-text d-flex flex-column">
+                                                <img src="../assets/img/location-marker-muted-14X17.svg"
+                                                    width="14" height="17" alt="">
+                                                <span>10 mi.</span>
+                                            </p>
+                                        </div>
+                                        <div class="align-self-end w-fit-content">
+                                            <button type="button"
+                                                class="btn btn-sm main-action-button w-fit-content">
+                                                <div class="button-icon">
+                                                    <img src="../assets/img/shoppping-bag.svg" height="18"
+                                                        width="18" class="buy-bag" />
+                                                </div>
+                                                <div class="btn-text">Buy</div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card card ">
+                            <div class="card-header">
+                                <div class="card-header-icon">
+                                    <img src="../assets/img/image-18.jpg" class="Image-18" />
+                                </div>
+                                <div class="card-header-title">Great Basin
+                                    Soap co.</div>
+                            </div>
+                            <div class="card-body p-0 pb-2">
+                                <img class="img-fluid"
+                                    src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                                <div class="card-body-bottom pt-2 px-3">
+                                    <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                                    <div class="d-flex justify-content-end mt-2">
+                                        <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div class="">
+                                            <p class="card-text sub-text d-flex flex-column">
+                                                <img src="../assets/img/location-marker-muted-14X17.svg"
+                                                    width="14" height="17" alt="">
+                                                <span>10 mi.</span>
+                                            </p>
+                                        </div>
+                                        <div class="align-self-end w-fit-content">
+                                            <button type="button"
+                                                class="btn btn-sm main-action-button w-fit-content">
+                                                <div class="button-icon">
+                                                    <img src="../assets/img/shoppping-bag.svg" height="18"
+                                                        width="18" class="buy-bag" />
+                                                </div>
+                                                <div class="btn-text">Buy</div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card card ">
+                            <div class="card-header">
+                                <div class="card-header-icon">
+                                    <img src="../assets/img/image-18.jpg" class="Image-18" />
+                                </div>
+                                <div class="card-header-title">Great Basin
+                                    Soap co.</div>
+                            </div>
+                            <div class="card-body p-0 pb-2">
+                                <img class="img-fluid"
+                                    src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                                <div class="card-body-bottom pt-2 px-3">
+                                    <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                                    <div class="d-flex justify-content-end mt-2">
+                                        <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div class="">
+                                            <p class="card-text sub-text d-flex flex-column">
+                                                <img src="../assets/img/location-marker-muted-14X17.svg"
+                                                    width="14" height="17" alt="">
+                                                <span>10 mi.</span>
+                                            </p>
+                                        </div>
+                                        <div class="align-self-end w-fit-content">
+                                            <button type="button"
+                                                class="btn btn-sm main-action-button w-fit-content">
+                                                <div class="button-icon">
+                                                    <img src="../assets/img/shoppping-bag.svg" height="18"
+                                                        width="18" class="buy-bag" />
+                                                </div>
+                                                <div class="btn-text">Buy</div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card card ">
+                            <div class="card-header">
+                                <div class="card-header-icon">
+                                    <img src="../assets/img/image-18.jpg" class="Image-18" />
+                                </div>
+                                <div class="card-header-title">Great Basin
+                                    Soap co.</div>
+                            </div>
+                            <div class="card-body p-0 pb-2">
+                                <img class="img-fluid"
+                                    src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                                <div class="card-body-bottom pt-2 px-3">
+                                    <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                                    <div class="d-flex justify-content-end mt-2">
+                                        <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div class="">
+                                            <p class="card-text sub-text d-flex flex-column">
+                                                <img src="../assets/img/location-marker-muted-14X17.svg"
+                                                    width="14" height="17" alt="">
+                                                <span>10 mi.</span>
+                                            </p>
+                                        </div>
+                                        <div class="align-self-end w-fit-content">
+                                            <button type="button"
+                                                class="btn btn-sm main-action-button w-fit-content">
+                                                <div class="button-icon">
+                                                    <img src="../assets/img/shoppping-bag.svg" height="18"
+                                                        width="18" class="buy-bag" />
+                                                </div>
+                                                <div class="btn-text">Buy</div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card card ">
+                            <div class="card-header">
+                                <div class="card-header-icon">
+                                    <img src="../assets/img/image-18.jpg" class="Image-18" />
+                                </div>
+                                <div class="card-header-title">Great Basin
+                                    Soap co.</div>
+                            </div>
+                            <div class="card-body p-0 pb-2">
+                                <img class="img-fluid"
+                                    src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                                <div class="card-body-bottom pt-2 px-3">
+                                    <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                                    <div class="d-flex justify-content-end mt-2">
+                                        <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div class="">
+                                            <p class="card-text sub-text d-flex flex-column">
+                                                <img src="../assets/img/location-marker-muted-14X17.svg"
+                                                    width="14" height="17" alt="">
+                                                <span>10 mi.</span>
+                                            </p>
+                                        </div>
+                                        <div class="align-self-end w-fit-content">
+                                            <button type="button"
+                                                class="btn btn-sm main-action-button w-fit-content">
+                                                <div class="button-icon">
+                                                    <img src="../assets/img/shoppping-bag.svg" height="18"
+                                                        width="18" class="buy-bag" />
+                                                </div>
+                                                <div class="btn-text">Buy</div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card card ">
+                            <div class="card-header">
+                                <div class="card-header-icon">
+                                    <img src="../assets/img/image-18.jpg" class="Image-18" />
+                                </div>
+                                <div class="card-header-title">Great Basin
+                                    Soap co.</div>
+                            </div>
+                            <div class="card-body p-0 pb-2">
+                                <img class="img-fluid"
+                                    src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                                <div class="card-body-bottom pt-2 px-3">
+                                    <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                                    <div class="d-flex justify-content-end mt-2">
+                                        <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div class="">
+                                            <p class="card-text sub-text d-flex flex-column">
+                                                <img src="../assets/img/location-marker-muted-14X17.svg"
+                                                    width="14" height="17" alt="">
+                                                <span>10 mi.</span>
+                                            </p>
+                                        </div>
+                                        <div class="align-self-end w-fit-content">
+                                            <button type="button"
+                                                class="btn btn-sm main-action-button w-fit-content">
+                                                <div class="button-icon">
+                                                    <img src="../assets/img/shoppping-bag.svg" height="18"
+                                                        width="18" class="buy-bag" />
+                                                </div>
+                                                <div class="btn-text">Buy</div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card card ">
+                            <div class="card-header">
+                                <div class="card-header-icon">
+                                    <img src="../assets/img/image-18.jpg" class="Image-18" />
+                                </div>
+                                <div class="card-header-title">Great Basin
+                                    Soap co.</div>
+                            </div>
+                            <div class="card-body p-0 pb-2">
+                                <img class="img-fluid"
+                                    src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                                <div class="card-body-bottom pt-2 px-3">
+                                    <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                                    <div class="d-flex justify-content-end mt-2">
+                                        <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div class="">
+                                            <p class="card-text sub-text d-flex flex-column">
+                                                <img src="../assets/img/location-marker-muted-14X17.svg"
+                                                    width="14" height="17" alt="">
+                                                <span>10 mi.</span>
+                                            </p>
+                                        </div>
+                                        <div class="align-self-end w-fit-content">
+                                            <button type="button"
+                                                class="btn btn-sm main-action-button w-fit-content">
+                                                <div class="button-icon">
+                                                    <img src="../assets/img/shoppping-bag.svg" height="18"
+                                                        width="18" class="buy-bag" />
+                                                </div>
+                                                <div class="btn-text">Buy</div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card card ">
+                            <div class="card-header">
+                                <div class="card-header-icon">
+                                    <img src="../assets/img/image-18.jpg" class="Image-18" />
+                                </div>
+                                <div class="card-header-title">Great Basin
+                                    Soap co.</div>
+                            </div>
+                            <div class="card-body p-0 pb-2">
+                                <img class="img-fluid"
+                                    src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                                <div class="card-body-bottom pt-2 px-3">
+                                    <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                                    <div class="d-flex justify-content-end mt-2">
+                                        <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div class="">
+                                            <p class="card-text sub-text d-flex flex-column">
+                                                <img src="../assets/img/location-marker-muted-14X17.svg"
+                                                    width="14" height="17" alt="">
+                                                <span>10 mi.</span>
+                                            </p>
+                                        </div>
+                                        <div class="align-self-end w-fit-content">
+                                            <button type="button"
+                                                class="btn btn-sm main-action-button w-fit-content">
+                                                <div class="button-icon">
+                                                    <img src="../assets/img/shoppping-bag.svg" height="18"
+                                                        width="18" class="buy-bag" />
+                                                </div>
+                                                <div class="btn-text">Buy</div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="row mt-5">
+                    <div class="col my-4 px-5">
+                        <h2 class="font-qs-b-30">
+                            Local shop result for <span class="text-primary">clothing</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col card-listing-wrapper px-4">
+                        <div class="owl-carousel side-nav-owl shop-carousel">
+                            <div class="shop-card card">
+                                <div class="card-header">
+                                <div class="card-header-icon">
+                                    <img
+                                        src="../assets/img/image-18.jpg"
+                                        srcset="../assets/img/image-18@2x.jpg 2x,
+                                                ../assets/img/image-18@3x.jpg 3x"
+                                        class="Image-18"
+                                    >
+                                </div>
+                                <div class="card-header-title">
+                                    Great Bags Vendor
+                                </div>
+                                </div>
+                                <div class="card-body p-0">
+                                <div class="row no-gutters">
+                                    <div class="col-md-5">
+                                    <svg class="bd-placeholder-img" width="100%" height="135" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                                    </div>
+                                    <div class="col-md-7 px-2 d-flex flex-column justify-content-between">
+                                    <div>
+                                    <button type="button" class="btn btn-sm btn-block">Bags</button>
+                                    <button type="button" class="btn btn-sm btn-block">Accessories</button>
+                                    </div>
+                                    <div>
+                                    <p class="card-text sub-text">
+                                        <i class="bi bi-geo-alt"></i> 10mi
+                                    </p>
+                                    <p class="card-text text-center pb-3">
+                                        <button type="button" class="btn btn-sm px-4 main-action-button">More</button>
+                                    </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="shop-card card">
+                                <div class="card-header">
+                                <div class="card-header-icon">
+                                    <img
+                                        src="../assets/img/image-18.jpg"
+                                        srcset="../assets/img/image-18@2x.jpg 2x,
+                                                ../assets/img/image-18@3x.jpg 3x"
+                                        class="Image-18"
+                                    >
+                                </div>
+                                <div class="card-header-title">
+                                    Great Bags Vendor
+                                </div>
+                                </div>
+                                <div class="card-body p-0">
+                                <div class="row no-gutters">
+                                    <div class="col-md-5">
+                                    <svg class="bd-placeholder-img" width="100%" height="135" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                                    </div>
+                                    <div class="col-md-7 px-2 d-flex flex-column justify-content-between">
+                                    <div>
+                                    <button type="button" class="btn btn-sm btn-block">Bags</button>
+                                    <button type="button" class="btn btn-sm btn-block">Accessories</button>
+                                    </div>
+                                    <div>
+                                    <p class="card-text sub-text">
+                                        <i class="bi bi-geo-alt"></i> 10mi
+                                    </p>
+                                    <p class="card-text text-center pb-3">
+                                        <button type="button" class="btn btn-sm px-4 main-action-button">More</button>
+                                    </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="shop-card card">
+                                <div class="card-header">
+                                <div class="card-header-icon">
+                                    <img
+                                        src="../assets/img/image-18.jpg"
+                                        srcset="../assets/img/image-18@2x.jpg 2x,
+                                                ../assets/img/image-18@3x.jpg 3x"
+                                        class="Image-18"
+                                    >
+                                </div>
+                                <div class="card-header-title">
+                                    Great Bags Vendor
+                                </div>
+                                </div>
+                                <div class="card-body p-0">
+                                <div class="row no-gutters">
+                                    <div class="col-md-5">
+                                    <svg class="bd-placeholder-img" width="100%" height="135" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                                    </div>
+                                    <div class="col-md-7 px-2 d-flex flex-column justify-content-between">
+                                    <div>
+                                    <button type="button" class="btn btn-sm btn-block">Bags</button>
+                                    <button type="button" class="btn btn-sm btn-block">Accessories</button>
+                                    </div>
+                                    <div>
+                                    <p class="card-text sub-text">
+                                        <i class="bi bi-geo-alt"></i> 10mi
+                                    </p>
+                                    <p class="card-text text-center pb-3">
+                                        <button type="button" class="btn btn-sm px-4 main-action-button">More</button>
+                                    </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="shop-card card">
+                                <div class="card-header">
+                                <div class="card-header-icon">
+                                    <img
+                                        src="../assets/img/image-18.jpg"
+                                        srcset="../assets/img/image-18@2x.jpg 2x,
+                                                ../assets/img/image-18@3x.jpg 3x"
+                                        class="Image-18"
+                                    >
+                                </div>
+                                <div class="card-header-title">
+                                    Great Bags Vendor
+                                </div>
+                                </div>
+                                <div class="card-body p-0">
+                                <div class="row no-gutters">
+                                    <div class="col-md-5">
+                                    <svg class="bd-placeholder-img" width="100%" height="135" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                                    </div>
+                                    <div class="col-md-7 px-2 d-flex flex-column justify-content-between">
+                                    <div>
+                                    <button type="button" class="btn btn-sm btn-block">Bags</button>
+                                    <button type="button" class="btn btn-sm btn-block">Accessories</button>
+                                    </div>
+                                    <div>
+                                    <p class="card-text sub-text">
+                                        <i class="bi bi-geo-alt"></i> 10mi
+                                    </p>
+                                    <p class="card-text text-center pb-3">
+                                        <button type="button" class="btn btn-sm px-4 main-action-button">More</button>
+                                    </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+
+                            <div class="shop-card card">
+                                <div class="card-header">
+                                <div class="card-header-icon">
+                                    <img
+                                        src="../assets/img/image-18.jpg"
+                                        srcset="../assets/img/image-18@2x.jpg 2x,
+                                                ../assets/img/image-18@3x.jpg 3x"
+                                        class="Image-18"
+                                    >
+                                </div>
+                                <div class="card-header-title">
+                                    Great Bags Vendor
+                                </div>
+                                </div>
+                                <div class="card-body p-0">
+                                <div class="row no-gutters">
+                                    <div class="col-md-5">
+                                    <svg class="bd-placeholder-img" width="100%" height="135" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                                    </div>
+                                    <div class="col-md-7 px-2 d-flex flex-column justify-content-between">
+                                    <div>
+                                    <button type="button" class="btn btn-sm btn-block">Bags</button>
+                                    <button type="button" class="btn btn-sm btn-block">Accessories</button>
+                                    </div>
+                                    <div>
+                                    <p class="card-text sub-text">
+                                        <i class="bi bi-geo-alt"></i> 10mi
+                                    </p>
+                                    <p class="card-text text-center pb-3">
+                                        <button type="button" class="btn btn-sm px-4 main-action-button">More</button>
+                                    </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+
+                            <div class="shop-card card">
+                                <div class="card-header">
+                                <div class="card-header-icon">
+                                    <img
+                                        src="../assets/img/image-18.jpg"
+                                        srcset="../assets/img/image-18@2x.jpg 2x,
+                                                ../assets/img/image-18@3x.jpg 3x"
+                                        class="Image-18"
+                                    >
+                                </div>
+                                <div class="card-header-title">
+                                    Great Bags Vendor
+                                </div>
+                                </div>
+                                <div class="card-body p-0">
+                                <div class="row no-gutters">
+                                    <div class="col-md-5">
+                                    <svg class="bd-placeholder-img" width="100%" height="135" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                                    </div>
+                                    <div class="col-md-7 px-2 d-flex flex-column justify-content-between">
+                                    <div>
+                                    <button type="button" class="btn btn-sm btn-block">Bags</button>
+                                    <button type="button" class="btn btn-sm btn-block">Accessories</button>
+                                    </div>
+                                    <div>
+                                    <p class="card-text sub-text">
+                                        <i class="bi bi-geo-alt"></i> 10mi
+                                    </p>
+                                    <p class="card-text text-center pb-3">
+                                        <button type="button" class="btn btn-sm px-4 main-action-button">More</button>
+                                    </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+
+                            <div class="shop-card card">
+                                <div class="card-header">
+                                <div class="card-header-icon">
+                                    <img
+                                        src="../assets/img/image-18.jpg"
+                                        srcset="../assets/img/image-18@2x.jpg 2x,
+                                                ../assets/img/image-18@3x.jpg 3x"
+                                        class="Image-18"
+                                    >
+                                </div>
+                                <div class="card-header-title">
+                                    Great Bags Vendor
+                                </div>
+                                </div>
+                                <div class="card-body p-0">
+                                <div class="row no-gutters">
+                                    <div class="col-md-5">
+                                    <svg class="bd-placeholder-img" width="100%" height="135" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                                    </div>
+                                    <div class="col-md-7 px-2 d-flex flex-column justify-content-between">
+                                    <div>
+                                    <button type="button" class="btn btn-sm btn-block">Bags</button>
+                                    <button type="button" class="btn btn-sm btn-block">Accessories</button>
+                                    </div>
+                                    <div>
+                                    <p class="card-text sub-text">
+                                        <i class="bi bi-geo-alt"></i> 10mi
+                                    </p>
+                                    <p class="card-text text-center pb-3">
+                                        <button type="button" class="btn btn-sm px-4 main-action-button">More</button>
+                                    </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+
+                            <div class="shop-card card">
+                                <div class="card-header">
+                                <div class="card-header-icon">
+                                    <img
+                                        src="../assets/img/image-18.jpg"
+                                        srcset="../assets/img/image-18@2x.jpg 2x,
+                                                ../assets/img/image-18@3x.jpg 3x"
+                                        class="Image-18"
+                                    >
+                                </div>
+                                <div class="card-header-title">
+                                    Great Bags Vendor
+                                </div>
+                                </div>
+                                <div class="card-body p-0">
+                                <div class="row no-gutters">
+                                    <div class="col-md-5">
+                                    <svg class="bd-placeholder-img" width="100%" height="135" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                                    </div>
+                                    <div class="col-md-7 px-2 d-flex flex-column justify-content-between">
+                                    <div>
+                                    <button type="button" class="btn btn-sm btn-block">Bags</button>
+                                    <button type="button" class="btn btn-sm btn-block">Accessories</button>
+                                    </div>
+                                    <div>
+                                    <p class="card-text sub-text">
+                                        <i class="bi bi-geo-alt"></i> 10mi
+                                    </p>
+                                    <p class="card-text text-center pb-3">
+                                        <button type="button" class="btn btn-sm px-4 main-action-button">More</button>
+                                    </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="shop-card card">
+                                <div class="card-header">
+                                <div class="card-header-icon">
+                                    <img
+                                        src="../assets/img/image-18.jpg"
+                                        srcset="../assets/img/image-18@2x.jpg 2x,
+                                                ../assets/img/image-18@3x.jpg 3x"
+                                        class="Image-18"
+                                    >
+                                </div>
+                                <div class="card-header-title">
+                                    Great Bags Vendor
+                                </div>
+                                </div>
+                                <div class="card-body p-0">
+                                <div class="row no-gutters">
+                                    <div class="col-md-5">
+                                    <svg class="bd-placeholder-img" width="100%" height="135" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                                    </div>
+                                    <div class="col-md-7 px-2 d-flex flex-column justify-content-between">
+                                    <div>
+                                    <button type="button" class="btn btn-sm btn-block">Bags</button>
+                                    <button type="button" class="btn btn-sm btn-block">Accessories</button>
+                                    </div>
+                                    <div>
+                                    <p class="card-text sub-text">
+                                        <i class="bi bi-geo-alt"></i> 10mi
+                                    </p>
+                                    <p class="card-text text-center pb-3">
+                                        <button type="button" class="btn btn-sm px-4 main-action-button">More</button>
+                                    </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col my-4 px-5">
+                        <h2 class="font-qs-b-30">
+                            Local items for <span class="text-primary">clothing</span>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col card-listing-wrapper px-4">
+                        <div class="owl-carousel side-nav-owl product-carousel">
+                            <div class="product-card card ">
+                                <div class="card-header">
+                                    <div class="card-header-icon">
+                                        <img src="../assets/img/image-18.jpg" class="Image-18" />
+                                    </div>
+                                    <div class="card-header-title">Great Basin
+                                        Soap co.</div>
+                                </div>
+                                <div class="card-body p-0 pb-2">
+                                    <img class="img-fluid"
+                                        src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                                    <div class="card-body-bottom pt-2 px-3">
+                                        <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                                        <div class="d-flex justify-content-end mt-2">
+                                            <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <div class="">
+                                                <p class="card-text sub-text d-flex flex-column">
+                                                    <img src="../assets/img/location-marker-muted-14X17.svg"
+                                                        width="14" height="17" alt="">
+                                                    <span>10 mi.</span>
+                                                </p>
+                                            </div>
+                                            <div class="align-self-end w-fit-content">
+                                                <button type="button"
+                                                    class="btn btn-sm main-action-button w-fit-content">
+                                                    <div class="button-icon">
+                                                        <img src="../assets/img/shoppping-bag.svg" height="18"
+                                                            width="18" class="buy-bag" />
+                                                    </div>
+                                                    <div class="btn-text">Buy</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card card ">
+                                <div class="card-header">
+                                    <div class="card-header-icon">
+                                        <img src="../assets/img/image-18.jpg" class="Image-18" />
+                                    </div>
+                                    <div class="card-header-title">Great Basin
+                                        Soap co.</div>
+                                </div>
+                                <div class="card-body p-0 pb-2">
+                                    <img class="img-fluid"
+                                        src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                                    <div class="card-body-bottom pt-2 px-3">
+                                        <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                                        <div class="d-flex justify-content-end mt-2">
+                                            <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <div class="">
+                                                <p class="card-text sub-text d-flex flex-column">
+                                                    <img src="../assets/img/location-marker-muted-14X17.svg"
+                                                        width="14" height="17" alt="">
+                                                    <span>10 mi.</span>
+                                                </p>
+                                            </div>
+                                            <div class="align-self-end w-fit-content">
+                                                <button type="button"
+                                                    class="btn btn-sm main-action-button w-fit-content">
+                                                    <div class="button-icon">
+                                                        <img src="../assets/img/shoppping-bag.svg" height="18"
+                                                            width="18" class="buy-bag" />
+                                                    </div>
+                                                    <div class="btn-text">Buy</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card card ">
+                                <div class="card-header">
+                                    <div class="card-header-icon">
+                                        <img src="../assets/img/image-18.jpg" class="Image-18" />
+                                    </div>
+                                    <div class="card-header-title">Great Basin
+                                        Soap co.</div>
+                                </div>
+                                <div class="card-body p-0 pb-2">
+                                    <img class="img-fluid"
+                                        src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                                    <div class="card-body-bottom pt-2 px-3">
+                                        <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                                        <div class="d-flex justify-content-end mt-2">
+                                            <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <div class="">
+                                                <p class="card-text sub-text d-flex flex-column">
+                                                    <img src="../assets/img/location-marker-muted-14X17.svg"
+                                                        width="14" height="17" alt="">
+                                                    <span>10 mi.</span>
+                                                </p>
+                                            </div>
+                                            <div class="align-self-end w-fit-content">
+                                                <button type="button"
+                                                    class="btn btn-sm main-action-button w-fit-content">
+                                                    <div class="button-icon">
+                                                        <img src="../assets/img/shoppping-bag.svg" height="18"
+                                                            width="18" class="buy-bag" />
+                                                    </div>
+                                                    <div class="btn-text">Buy</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card card ">
+                                <div class="card-header">
+                                    <div class="card-header-icon">
+                                        <img src="../assets/img/image-18.jpg" class="Image-18" />
+                                    </div>
+                                    <div class="card-header-title">Great Basin
+                                        Soap co.</div>
+                                </div>
+                                <div class="card-body p-0 pb-2">
+                                    <img class="img-fluid"
+                                        src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                                    <div class="card-body-bottom pt-2 px-3">
+                                        <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                                        <div class="d-flex justify-content-end mt-2">
+                                            <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <div class="">
+                                                <p class="card-text sub-text d-flex flex-column">
+                                                    <img src="../assets/img/location-marker-muted-14X17.svg"
+                                                        width="14" height="17" alt="">
+                                                    <span>10 mi.</span>
+                                                </p>
+                                            </div>
+                                            <div class="align-self-end w-fit-content">
+                                                <button type="button"
+                                                    class="btn btn-sm main-action-button w-fit-content">
+                                                    <div class="button-icon">
+                                                        <img src="../assets/img/shoppping-bag.svg" height="18"
+                                                            width="18" class="buy-bag" />
+                                                    </div>
+                                                    <div class="btn-text">Buy</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card card ">
+                                <div class="card-header">
+                                    <div class="card-header-icon">
+                                        <img src="../assets/img/image-18.jpg" class="Image-18" />
+                                    </div>
+                                    <div class="card-header-title">Great Basin
+                                        Soap co.</div>
+                                </div>
+                                <div class="card-body p-0 pb-2">
+                                    <img class="img-fluid"
+                                        src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                                    <div class="card-body-bottom pt-2 px-3">
+                                        <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                                        <div class="d-flex justify-content-end mt-2">
+                                            <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <div class="">
+                                                <p class="card-text sub-text d-flex flex-column">
+                                                    <img src="../assets/img/location-marker-muted-14X17.svg"
+                                                        width="14" height="17" alt="">
+                                                    <span>10 mi.</span>
+                                                </p>
+                                            </div>
+                                            <div class="align-self-end w-fit-content">
+                                                <button type="button"
+                                                    class="btn btn-sm main-action-button w-fit-content">
+                                                    <div class="button-icon">
+                                                        <img src="../assets/img/shoppping-bag.svg" height="18"
+                                                            width="18" class="buy-bag" />
+                                                    </div>
+                                                    <div class="btn-text">Buy</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card card ">
+                                <div class="card-header">
+                                    <div class="card-header-icon">
+                                        <img src="../assets/img/image-18.jpg" class="Image-18" />
+                                    </div>
+                                    <div class="card-header-title">Great Basin
+                                        Soap co.</div>
+                                </div>
+                                <div class="card-body p-0 pb-2">
+                                    <img class="img-fluid"
+                                        src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                                    <div class="card-body-bottom pt-2 px-3">
+                                        <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                                        <div class="d-flex justify-content-end mt-2">
+                                            <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <div class="">
+                                                <p class="card-text sub-text d-flex flex-column">
+                                                    <img src="../assets/img/location-marker-muted-14X17.svg"
+                                                        width="14" height="17" alt="">
+                                                    <span>10 mi.</span>
+                                                </p>
+                                            </div>
+                                            <div class="align-self-end w-fit-content">
+                                                <button type="button"
+                                                    class="btn btn-sm main-action-button w-fit-content">
+                                                    <div class="button-icon">
+                                                        <img src="../assets/img/shoppping-bag.svg" height="18"
+                                                            width="18" class="buy-bag" />
+                                                    </div>
+                                                    <div class="btn-text">Buy</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card card ">
+                                <div class="card-header">
+                                    <div class="card-header-icon">
+                                        <img src="../assets/img/image-18.jpg" class="Image-18" />
+                                    </div>
+                                    <div class="card-header-title">Great Basin
+                                        Soap co.</div>
+                                </div>
+                                <div class="card-body p-0 pb-2">
+                                    <img class="img-fluid"
+                                        src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                                    <div class="card-body-bottom pt-2 px-3">
+                                        <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                                        <div class="d-flex justify-content-end mt-2">
+                                            <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <div class="">
+                                                <p class="card-text sub-text d-flex flex-column">
+                                                    <img src="../assets/img/location-marker-muted-14X17.svg"
+                                                        width="14" height="17" alt="">
+                                                    <span>10 mi.</span>
+                                                </p>
+                                            </div>
+                                            <div class="align-self-end w-fit-content">
+                                                <button type="button"
+                                                    class="btn btn-sm main-action-button w-fit-content">
+                                                    <div class="button-icon">
+                                                        <img src="../assets/img/shoppping-bag.svg" height="18"
+                                                            width="18" class="buy-bag" />
+                                                    </div>
+                                                    <div class="btn-text">Buy</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card card ">
+                                <div class="card-header">
+                                    <div class="card-header-icon">
+                                        <img src="../assets/img/image-18.jpg" class="Image-18" />
+                                    </div>
+                                    <div class="card-header-title">Great Basin
+                                        Soap co.</div>
+                                </div>
+                                <div class="card-body p-0 pb-2">
+                                    <img class="img-fluid"
+                                        src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                                    <div class="card-body-bottom pt-2 px-3">
+                                        <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                                        <div class="d-flex justify-content-end mt-2">
+                                            <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <div class="">
+                                                <p class="card-text sub-text d-flex flex-column">
+                                                    <img src="../assets/img/location-marker-muted-14X17.svg"
+                                                        width="14" height="17" alt="">
+                                                    <span>10 mi.</span>
+                                                </p>
+                                            </div>
+                                            <div class="align-self-end w-fit-content">
+                                                <button type="button"
+                                                    class="btn btn-sm main-action-button w-fit-content">
+                                                    <div class="button-icon">
+                                                        <img src="../assets/img/shoppping-bag.svg" height="18"
+                                                            width="18" class="buy-bag" />
+                                                    </div>
+                                                    <div class="btn-text">Buy</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card card ">
+                                <div class="card-header">
+                                    <div class="card-header-icon">
+                                        <img src="../assets/img/image-18.jpg" class="Image-18" />
+                                    </div>
+                                    <div class="card-header-title">Great Basin
+                                        Soap co.</div>
+                                </div>
+                                <div class="card-body p-0 pb-2">
+                                    <img class="img-fluid"
+                                        src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                                    <div class="card-body-bottom pt-2 px-3">
+                                        <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                                        <div class="d-flex justify-content-end mt-2">
+                                            <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <div class="">
+                                                <p class="card-text sub-text d-flex flex-column">
+                                                    <img src="../assets/img/location-marker-muted-14X17.svg"
+                                                        width="14" height="17" alt="">
+                                                    <span>10 mi.</span>
+                                                </p>
+                                            </div>
+                                            <div class="align-self-end w-fit-content">
+                                                <button type="button"
+                                                    class="btn btn-sm main-action-button w-fit-content">
+                                                    <div class="button-icon">
+                                                        <img src="../assets/img/shoppping-bag.svg" height="18"
+                                                            width="18" class="buy-bag" />
+                                                    </div>
+                                                    <div class="btn-text">Buy</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card card ">
+                                <div class="card-header">
+                                    <div class="card-header-icon">
+                                        <img src="../assets/img/image-18.jpg" class="Image-18" />
+                                    </div>
+                                    <div class="card-header-title">Great Basin
+                                        Soap co.</div>
+                                </div>
+                                <div class="card-body p-0 pb-2">
+                                    <img class="img-fluid"
+                                        src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                                    <div class="card-body-bottom pt-2 px-3">
+                                        <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                                        <div class="d-flex justify-content-end mt-2">
+                                            <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <div class="">
+                                                <p class="card-text sub-text d-flex flex-column">
+                                                    <img src="../assets/img/location-marker-muted-14X17.svg"
+                                                        width="14" height="17" alt="">
+                                                    <span>10 mi.</span>
+                                                </p>
+                                            </div>
+                                            <div class="align-self-end w-fit-content">
+                                                <button type="button"
+                                                    class="btn btn-sm main-action-button w-fit-content">
+                                                    <div class="button-icon">
+                                                        <img src="../assets/img/shoppping-bag.svg" height="18"
+                                                            width="18" class="buy-bag" />
+                                                    </div>
+                                                    <div class="btn-text">Buy</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- End of Content Wrapper -->
+            </div>
+        </div>
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Footer Starts -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-section-top d-none d-md-flex">
+                <div class="col-md-3 text-right">
+                    <div class="footer-logo-section">
+                        <a class="" href="#">
+                            <img src="../assets/img/group-1216.svg" class="footer-logo" />
+                        </a>
+                        <p class="footer-logo-text">www.Bukit.com</p>
+                    </div>
+                </div>
+                <div class="col-md-3 footer-links">
+                    <a class="" href="#"> Legal </a>
+                    <a class="" href="#"> Terms & Conditions </a>
+                    <a class="" href="#"> Privacy Policy </a>
+                </div>
+                <div class="col-md-3 footer-links">
+                    <a class="" href="#"> About Us </a>
+                    <a class="" href="#"> Who We Are </a>
+                    <a class="" href="#"> FAQ </a>
+                </div>
+                <div class="col-md-3 footer-links">
+                    <a class="" href="#">
+                        <i class="bi bi-facebook"> Facebook</i>
+                    </a>
+                    <a class="" href="#">
+                        <i class="bi bi-twitter"> Twitter</i>
+                    </a>
+                </div>
+            </div>
+            <div class="d-md-none footer-section-top">
+                <div class="footer-links d-flex justify-content-center">
+                    <a class="" href="#"> About Us </a>
+                    <span class="px-2"> | </span>
+                    <a class="" href="#"> Legal </a>
+                </div>
+                <div class="footer-links d-flex justify-content-center">
+                    <a class="px-2" href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a class="px-2" href="#">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section-bottom text-center">
+                <p>2020 Bukit, LLC</p>
+                <hr />
+                <p>Powered by Wyred Insights</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <script src="../assets/js/sidenav.js"></script>
+    <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            var owlShop = $(".shop-carousel");
+            var owlProduct = $(".product-carousel");
+
+            owlShop.owlCarousel({
+                loop:false,
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:true
+                    },
+                    400:{
+                        items:1.4,
+                    },
+                    500:{
+                        items:1.8,
+                    },
+                    575:{
+                        items:1.3,
+                    },
+                    720:{
+                        items:1.6,
+                    },
+                    900:{
+                        items:2.6,
+                    },
+                    1000:{
+                        items:3.1,
+                    },
+                    1200:{
+                        items:3.6,
+                    },
+                    1400:{
+                        items:4.3,
+                    }
+
+                }
+            });
+
+            owlProduct.owlCarousel({
+                loop:false,
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1.6,
+                    },
+                    400:{
+                        items:1.9,
+                    },
+                    500:{
+                        items:2.5,
+                    },
+                    575:{
+                        items:1.8,
+                    },
+                    720:{
+                        items:2.2,
+                    },
+                    900:{
+                        items:3.2,
+                    },
+                    1000:{
+                        items:4.1,
+                    },
+                    1200:{
+                        items:5,
+                    },
+                    1400:{
+                        items:6,
+                    }
+                }
+            });
+
+            $('.mob-filtr-btn').click(function(event){
+                event.preventDefault();
+                $('#wrapper').addClass('show-filters');
+                if($('.mobile-filter-wrapper').hasClass('d-none')) {
+                    $('.mobile-filter-wrapper').removeClass('d-none').addClass('d-block');
+                }
+
+            });
+
+            $('.back-to-listing').click(function(event){
+                event.preventDefault();
+                $('#wrapper').removeClass('show-filters');
+                $('.mobile-filter-wrapper').removeClass('d-block').addClass('d-none');
+            })
+
+
+            $('.mob-filter-cat-label').click(function(event){
+                event.preventDefault();
+                let currentId = $(event.target).attr('id');
+                $('.mob-filter-cat-label').removeClass('active');
+                $(event.target).addClass('active');
+                $('.mob-filter-facet-container').addClass('d-none');
+                $('.mobile-filter-wrapper').find(`[data-id=${currentId}]`).removeClass('d-none')
+            })
+
+        });
+    </script>
+</body>
+
+</html>
