@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Bukit</title>
+
+  <!-- Custom fonts for this template-->
+
+  <!-- CSS for the framework -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+
+  <!-- Project Icons -->
+  <script src="https://kit.fontawesome.com/85e68fdb5b.js" crossorigin="anonymous"></script>
+
+  <!-- Custom styles for this template-->
+  <link rel="stylesheet" href="../assets/css/header.css" />
+  <link rel="stylesheet" href="../assets/css/footer.css" />
+  <link rel="stylesheet" href="../assets/css/left_nav.css" />
+  <link rel="stylesheet" href="../assets/css/dashboard.css" />
+</head>
+
+<body id="page-top">
+  <!-- Top Navigation Starts -->
+  <nav class="navbar navbar-dark header d-flex">
+    <button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="sidenav" data-target=".sidenav-left">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+      <img src="../assets/img/logo-icn.svg" class="logo" />
+    </a>
+    <div class="d-flex align-items-center mr-auto ml-5 mt-3 pl-5">
+      <form>
+        <div class="form-group header-select">
+          <select class="form-control">
+            <option selected>Bob’s Shoe</option>
+            <option value="1">Lorem ipsum dolor </option>
+            <option value="2">sit amet consectetur</option>
+            <option value="3">Corrupti facere officia ipsum</option>
+          </select>
+        </div>
+      </form>
+
+    </div>
+    <div class="">
+      <span class="navbar-text d-flex align-items-center">
+        <img src="../assets/img/green-bag-icn.svg" class="user-logo" />
+        <span>Login</span>
+      </span>
+    </div>
+  </nav>
+  <!-- Mobile search container starts -->
+  <div class="collapse navbar navbar-dark header d-md-none" id="collapseExample">
+    <form class="d-flex search-input-container m-auto w-100 d-md-none">
+      <div class="">
+        <select class="header-search-select form-control h-100">
+          <option selected="">All</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      <div class="flex-grow-1 w-75">
+        <input class="form-control mr-sm-2 header-search h-auto" type="search"
+          placeholder="Search Bukit for your favourites" aria-label="Search" />
+      </div>
+    </form>
+  </div>
+  <!-- Mobile search container ends -->
+  <!-- Top Navigation Ends -->
+
+  <!-- Page Wrapper -->
+  <div id="wrapper" class="container bg-white">
+    <div class="row">
+      <div class="col-lg-2 col-sm-3 px-0 sidenav sidenav-left sidenav-animate sidenav-md-show">
+        <!-- Sidebar -->
+        <nav class="nav flex-column sidebar sidebar-dark">
+          <ul class="nav-list py-5">
+            <li>
+              <a class="side-nav-link" href="../merchant-homepage-and-dashboard/dashboard.html">
+                <i class="bi bi-columns-gap mr-3 ml-2"></i>
+                Dashboard</a>
+            </li>
+            <li>
+              <a class="side-nav-link" href="../merchant-order/index.html">
+                <i class="bi bi-receipt mr-3 ml-2"></i>
+                Order</a>
+            </li>
+            <li>
+              <a class="side-nav-link" href="../merchant-product/index.html">
+                <i class="bi bi-box-seam mr-3 ml-2"></i>
+                Product</a>
+            </li>
+            <li>
+              <a class="side-nav-link " href="../merchant-notification-and-settings/index.html">
+                <i class="bi bi-bell mr-3 ml-2"></i>
+                Notification</a>
+            </li>
+            <li>
+              <a class="side-nav-link active" href="../customer-account-setting-and-legal/index.html">
+                <i class="bi bi-person mr-3 ml-2"></i>
+                Profile</a>
+            </li>
+            <li>
+              <a class="accordion-heading side-nav-link" data-toggle="collapse" data-target="#settingMenu">
+                <span class="nav-header-primary"><i class="bi bi-gear mr-3 ml-2"></i> Settings
+                  <span class="pull-right"><b class="caret"></b></span></span>
+              </a>
+
+              <ul class="nav-list collapse" id="settingMenu">
+                <li>
+                  <a class="side-nav-link" href="../merchant-notification-and-settings/team.html">
+                    <i class="bi bi-person mr-3 ml-2 invisible"></i>
+                    Team</a>
+                </li>
+                <li>
+                  <a class="side-nav-link" href="../merchant-notification-and-settings/hour.html">
+                    <i class="bi bi-person mr-3 ml-2 invisible"></i>
+                    Hour</a>
+                </li>
+                <li>
+                  <a class="side-nav-link" href="../merchant-notification-and-settings/deposit.html">
+                    <i class="bi bi-person mr-3 ml-2 invisible"></i>
+                    Deposit</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- End of Sidebar -->
+      </div>
+      <div class="main col-12 col-sm-9 col-lg-10 px-md-3 px-sm-1">
+        <!-- Content Wrapper -->
+        <div class="container-fluid mb-5" id="content-wrapper">
+          <!-- Page heading -->
+          <div class="row mt-4 mb-5 mx-0">
+            <div class="col font-qs-b-30 text-primary p-0 mt-4">
+              <span class="add-wid-circle"><img src="../assets/img/plus.svg" height="23" width="23" alt=""></span>
+              Great Basin Soap Co.
+              <button class="btn btn-link p-0 m-0 ml-3">
+                <img src="../assets/img/edit.svg" height="20" width="20" alt="" />
+              </button>
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="col-12 d-flex flex-column flex-grow-1">
+              <div class="d-flex bg-grey p-4 h-100 flex-column mt-5 ">
+                <div class="add-card d-flex flex-column bg-white min-h-300 bdr-radius-10"
+                  data-input-class="store-main-img">
+                  <img src="../assets/img/plus.svg" alt="add" height="30" width="30" />
+                  <span class="font-rw-r-18">Add image</span>
+                  <input type="file" class="add-file-input store-main-img" style="display: none" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row p-0 mb-5 mt-3 ">
+            <div class="col-6 d-flex flex-column flex-grow-1">
+              <div class="d-flex bg-grey p-4 h-100 flex-column mt-5 ">
+                <!-- form -->
+                <div class="d-flex flex-column mb-5">
+                  <h4 class="font-qs-b-20 text-primary">Great Basin Soap Co.</h4>
+                  <form>
+                    <div class="form-group row mt-4">
+                      <label for="address1" class="col-1 col-form-label"> <img
+                          src="../assets/img/location-marker-primary-42.svg" height="40" width="40" alt="" /></label>
+                      <div class="col-10 mt-2">
+                        <input type="text" class="form-control" id="address1" placeholder="Add address 1"
+                          value="6420 Sequence Dr Suite 400, San Diego, ">
+                      </div>
+                      <button class="btn btn-link p-0 m-0 checked-btn-wid-input col-1 mt-1">
+                        <img src="../assets/img/icn-checked.svg" height="25" width="25" alt="" />
+                      </button>
+                    </div>
+
+                    <div class="form-group row mt-1">
+                      <label for="address2" class="col-1 col-form-label"></label>
+                      <div class="col-10">
+                        <input type="text" class="form-control" id="address2" placeholder="Add address 2" value="">
+                      </div>
+                    </div>
+
+
+                    <div class="form-group row mt-1">
+                      <label for="address1" class="col-1 col-form-label"></label>
+                      <div class="col-10 mt-2">
+                        <div class="form-group row">
+                          <div class="col-6">
+                            <select id="inputState" class="form-control">
+                              <option selected>Select City</option>
+                              <option>Small</option>
+                              <option>Medium</option>
+                              <option>Large</option>
+                            </select>
+                          </div>
+                          <div class="col-6">
+                            <select id="inputState" class="form-control">
+                              <option selected>Select State</option>
+                              <option>Small</option>
+                              <option>Medium</option>
+                              <option>Large</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="form-group row mt-1">
+                      <label for="zipcode" class="col-1 col-form-label"> </label>
+                      <div class="col-5">
+                        <input type="text" class="form-control" id="zipcode" placeholder="Pin code" value="92396">
+                      </div>
+                    </div>
+
+                    <div class="form-group row mt-5">
+                      <label for="address1" class="col-1 col-form-label"> <img src="../assets/img/phone-primary-42.svg"
+                          height="40" width="40" alt="" /></label>
+                      <div class="col-10 mt-2">
+                        <input type="text" class="form-control" id="address1" placeholder="Phone number" value="">
+                      </div>
+                      <button class="btn btn-link p-0 m-0 checked-btn-wid-input col-1 mt-1">
+                        <img src="../assets/img/icn-checked.svg" height="25" width="25" alt="" />
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <!-- add store image -->
+                <div class="add-card d-flex flex-column bg-white min-h-300" data-input-class="store-other-img">
+                  <img src="../assets/img/plus.svg" alt="add" height="30" width="30" />
+                  <span class="font-rw-r-18">Add Store image</span>
+                  <input type="file" class="add-file-input store-other-img" style="display: none" />
+                </div>
+                <!-- Add store image -->
+                <div class="add-card d-flex flex-column bg-white mt-5 mb-5 p-5">
+                  <img src="../assets/img/plus.svg" alt="add" height="30" width="30" />
+                  <span class="font-rw-r-18">Add Store image</span>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-6  d-flex flex-column flex-grow-1">
+              <div class="d-flex bg-grey mt-5 flex-column">
+                <div id="store-desc" data-id="store-desc"
+                  class="d-flex bg-grey py-5 px-5 flex-column flex-grow-1 toggle-edit-parent">
+                  <div class="d-flex justify-content-between">
+                    <h3 class="font-qs-b-30">Description</h3>
+                    <button class="btn btn-link p-0 m-0 toggle-edit">
+                      <img src="../assets/img/edit.svg" alt="" />
+                    </button>
+                  </div>
+                  <div class="mt-4">
+                    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                      aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                      esse molestee consequat, vel illum dolore</p>
+                    <p>feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+                      luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,
+                      cons ectetuer adipiscing elit, sed diam
+                      nonummy nibh euismod tincidunt ut laoreet dolore magna
+                      aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                      nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                      aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+                      amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                      euismod tincidunt ut laoreet dolore magna aliquam erat
+                      volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                      tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                      commodo consequat.</p>
+                  </div>
+
+                </div>
+
+                <div id="store-desc-edit" data-id="store-desc"
+                  class="d-none bg-grey py-5 px-5 flex-grow-1 flex-column toggle-edit-parent">
+                  <div class="d-flex justify-content-between">
+                    <h3 class="font-qs-b-30">Description</h3>
+                    <button class="btn btn-link p-0 m-0 toggle-edit">
+                      <img src="../assets/img/icn-checked.svg" height="25" width="25" alt="" />
+                    </button>
+                  </div>
+                  <div class="form-group mt-4">
+                    <textarea class="form-control pt-4" id="storeDesc" rows="10"
+                      placeholder="Type description here"></textarea>
+                  </div>
+                </div>
+
+
+                <div id="storemission" data-id="storemission"
+                  class="d-flex bg-grey py-5 px-5 flex-column flex-grow-1 toggle-edit-parent">
+                  <div class="d-flex justify-content-between">
+                    <h3 class="font-qs-b-30">Mission Statement</h3>
+                    <button class="btn btn-link p-0 m-0 toggle-edit">
+                      <img src="../assets/img/edit.svg" alt="" />
+                    </button>
+                  </div>
+                  <div class="mt-4">
+                    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                      aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                      esse molestee consequat, vel illum dolore</p>
+                    <p>feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+                      luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,
+                      cons ectetuer adipiscing elit, sed diam
+                      nonummy nibh euismod tincidunt ut laoreet dolore magna
+                      aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                      nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                      aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+                      amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                      euismod tincidunt ut laoreet dolore magna aliquam erat
+                      volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                      tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                      commodo consequat.</p>
+                  </div>
+                </div>
+
+                <div id="storemission-edit" data-id="storemission"
+                  class="d-none bg-grey py-5 px-5 flex-grow-1 flex-column toggle-edit-parent">
+                  <div class="d-flex justify-content-between">
+                    <h3 class="font-qs-b-30">Mission Statement</h3>
+                    <button class="btn btn-link p-0 m-0 toggle-edit">
+                      <img src="../assets/img/icn-checked.svg" height="25" width="25" alt="" />
+                    </button>
+                  </div>
+                  <div class="form-group mt-4">
+                    <textarea class="form-control pt-4" id="storemission" rows="10"
+                      placeholder="Type mission statement"></textarea>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 d-flex flex-column flex-grow-1 pt-2">
+              <div class="d-flex bg-grey p-4 h-100 flex-column mt-5 min-h-300">
+                <h3 class="font-qs-b-30">Featured Items Near <a href="#">Reno, NV</a> </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 d-flex flex-column flex-grow-1 pt-2">
+              <div class="d-flex bg-grey p-4 flex-column mt-5 flex-grow-1">
+                <h3 class="font-qs-b-30 mt-2">All products from this vendor </h3>
+
+                <div class="d-flex flex-wrap mt-3">
+
+                  <div class="product-card card ">
+                    <div class="card-header">
+                      <div class="card-header-icon">
+                        <img src="../assets/img/image-18.jpg" class="Image-18" />
+                      </div>
+                      <div class="card-header-title">Great Basin
+                        Soap co.</div>
+                    </div>
+                    <div class="card-body p-0 pb-2">
+                      <img class="img-fluid" src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                      <div class="card-body-bottom pt-2 px-3">
+                        <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                        <div class="d-flex justify-content-end mt-2">
+                          <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mt-2">
+                          <div class="">
+                            <p class="card-text sub-text d-flex flex-column">
+                              <img src="../assets/img/location-marker-muted-14X17.svg" width="14" height="17" alt="">
+                              <span>10 mi.</span>
+                            </p>
+                          </div>
+                          <div class="align-self-end w-fit-content">
+                            <button type="button" class="btn btn-sm main-action-button w-fit-content">
+                              <div class="button-icon">
+                                <img src="../assets/img/shoppping-bag.svg" height="18" width="18" class="buy-bag" />
+                              </div>
+                              <div class="btn-text">Buy</div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product-card card ">
+                    <div class="card-header">
+                      <div class="card-header-icon">
+                        <img src="../assets/img/image-18.jpg" class="Image-18" />
+                      </div>
+                      <div class="card-header-title">Great Basin
+                        Soap co.</div>
+                    </div>
+                    <div class="card-body p-0 pb-2">
+                      <img class="img-fluid" src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                      <div class="card-body-bottom pt-2 px-3">
+                        <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                        <div class="d-flex justify-content-end mt-2">
+                          <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mt-2">
+                          <div class="">
+                            <p class="card-text sub-text d-flex flex-column">
+                              <img src="../assets/img/location-marker-muted-14X17.svg" width="14" height="17" alt="">
+                              <span>10 mi.</span>
+                            </p>
+                          </div>
+                          <div class="align-self-end w-fit-content">
+                            <button type="button" class="btn btn-sm main-action-button w-fit-content">
+                              <div class="button-icon">
+                                <img src="../assets/img/shoppping-bag.svg" height="18" width="18" class="buy-bag" />
+                              </div>
+                              <div class="btn-text">Buy</div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product-card card ">
+                    <div class="card-header">
+                      <div class="card-header-icon">
+                        <img src="../assets/img/image-18.jpg" class="Image-18" />
+                      </div>
+                      <div class="card-header-title">Great Basin
+                        Soap co.</div>
+                    </div>
+                    <div class="card-body p-0 pb-2">
+                      <img class="img-fluid" src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                      <div class="card-body-bottom pt-2 px-3">
+                        <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                        <div class="d-flex justify-content-end mt-2">
+                          <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mt-2">
+                          <div class="">
+                            <p class="card-text sub-text d-flex flex-column">
+                              <img src="../assets/img/location-marker-muted-14X17.svg" width="14" height="17" alt="">
+                              <span>10 mi.</span>
+                            </p>
+                          </div>
+                          <div class="align-self-end w-fit-content">
+                            <button type="button" class="btn btn-sm main-action-button w-fit-content">
+                              <div class="button-icon">
+                                <img src="../assets/img/shoppping-bag.svg" height="18" width="18" class="buy-bag" />
+                              </div>
+                              <div class="btn-text">Buy</div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product-card card ">
+                    <div class="card-header">
+                      <div class="card-header-icon">
+                        <img src="../assets/img/image-18.jpg" class="Image-18" />
+                      </div>
+                      <div class="card-header-title">Great Basin
+                        Soap co.</div>
+                    </div>
+                    <div class="card-body p-0 pb-2">
+                      <img class="img-fluid" src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                      <div class="card-body-bottom pt-2 px-3">
+                        <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                        <div class="d-flex justify-content-end mt-2">
+                          <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mt-2">
+                          <div class="">
+                            <p class="card-text sub-text d-flex flex-column">
+                              <img src="../assets/img/location-marker-muted-14X17.svg" width="14" height="17" alt="">
+                              <span>10 mi.</span>
+                            </p>
+                          </div>
+                          <div class="align-self-end w-fit-content">
+                            <button type="button" class="btn btn-sm main-action-button w-fit-content">
+                              <div class="button-icon">
+                                <img src="../assets/img/shoppping-bag.svg" height="18" width="18" class="buy-bag" />
+                              </div>
+                              <div class="btn-text">Buy</div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product-card card ">
+                    <div class="card-header">
+                      <div class="card-header-icon">
+                        <img src="../assets/img/image-18.jpg" class="Image-18" />
+                      </div>
+                      <div class="card-header-title">Great Basin
+                        Soap co.</div>
+                    </div>
+                    <div class="card-body p-0 pb-2">
+                      <img class="img-fluid" src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                      <div class="card-body-bottom pt-2 px-3">
+                        <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                        <div class="d-flex justify-content-end mt-2">
+                          <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mt-2">
+                          <div class="">
+                            <p class="card-text sub-text d-flex flex-column">
+                              <img src="../assets/img/location-marker-muted-14X17.svg" width="14" height="17" alt="">
+                              <span>10 mi.</span>
+                            </p>
+                          </div>
+                          <div class="align-self-end w-fit-content">
+                            <button type="button" class="btn btn-sm main-action-button w-fit-content">
+                              <div class="button-icon">
+                                <img src="../assets/img/shoppping-bag.svg" height="18" width="18" class="buy-bag" />
+                              </div>
+                              <div class="btn-text">Buy</div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="product-card card ">
+                    <div class="card-header">
+                      <div class="card-header-icon">
+                        <img src="../assets/img/image-18.jpg" class="Image-18" />
+                      </div>
+                      <div class="card-header-title">Great Basin
+                        Soap co.</div>
+                    </div>
+                    <div class="card-body p-0 pb-2">
+                      <img class="img-fluid" src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                      <div class="card-body-bottom pt-2 px-3">
+                        <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                        <div class="d-flex justify-content-end mt-2">
+                          <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mt-2">
+                          <div class="">
+                            <p class="card-text sub-text d-flex flex-column">
+                              <img src="../assets/img/location-marker-muted-14X17.svg" width="14" height="17" alt="">
+                              <span>10 mi.</span>
+                            </p>
+                          </div>
+                          <div class="align-self-end w-fit-content">
+                            <button type="button" class="btn btn-sm main-action-button w-fit-content">
+                              <div class="button-icon">
+                                <img src="../assets/img/shoppping-bag.svg" height="18" width="18" class="buy-bag" />
+                              </div>
+                              <div class="btn-text">Buy</div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="product-card card ">
+                    <div class="card-header">
+                      <div class="card-header-icon">
+                        <img src="../assets/img/image-18.jpg" class="Image-18" />
+                      </div>
+                      <div class="card-header-title">Great Basin
+                        Soap co.</div>
+                    </div>
+                    <div class="card-body p-0 pb-2">
+                      <img class="img-fluid" src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                      <div class="card-body-bottom pt-2 px-3">
+                        <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                        <div class="d-flex justify-content-end mt-2">
+                          <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mt-2">
+                          <div class="">
+                            <p class="card-text sub-text d-flex flex-column">
+                              <img src="../assets/img/location-marker-muted-14X17.svg" width="14" height="17" alt="">
+                              <span>10 mi.</span>
+                            </p>
+                          </div>
+                          <div class="align-self-end w-fit-content">
+                            <button type="button" class="btn btn-sm main-action-button w-fit-content">
+                              <div class="button-icon">
+                                <img src="../assets/img/shoppping-bag.svg" height="18" width="18" class="buy-bag" />
+                              </div>
+                              <div class="btn-text">Buy</div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="product-card card ">
+                    <div class="card-header">
+                      <div class="card-header-icon">
+                        <img src="../assets/img/image-18.jpg" class="Image-18" />
+                      </div>
+                      <div class="card-header-title">Great Basin
+                        Soap co.</div>
+                    </div>
+                    <div class="card-body p-0 pb-2">
+                      <img class="img-fluid" src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                      <div class="card-body-bottom pt-2 px-3">
+                        <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                        <div class="d-flex justify-content-end mt-2">
+                          <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mt-2">
+                          <div class="">
+                            <p class="card-text sub-text d-flex flex-column">
+                              <img src="../assets/img/location-marker-muted-14X17.svg" width="14" height="17" alt="">
+                              <span>10 mi.</span>
+                            </p>
+                          </div>
+                          <div class="align-self-end w-fit-content">
+                            <button type="button" class="btn btn-sm main-action-button w-fit-content">
+                              <div class="button-icon">
+                                <img src="../assets/img/shoppping-bag.svg" height="18" width="18" class="buy-bag" />
+                              </div>
+                              <div class="btn-text">Buy</div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="product-card card ">
+                    <div class="card-header">
+                      <div class="card-header-icon">
+                        <img src="../assets/img/image-18.jpg" class="Image-18" />
+                      </div>
+                      <div class="card-header-title">Great Basin
+                        Soap co.</div>
+                    </div>
+                    <div class="card-body p-0 pb-2">
+                      <img class="img-fluid" src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                      <div class="card-body-bottom pt-2 px-3">
+                        <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                        <div class="d-flex justify-content-end mt-2">
+                          <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mt-2">
+                          <div class="">
+                            <p class="card-text sub-text d-flex flex-column">
+                              <img src="../assets/img/location-marker-muted-14X17.svg" width="14" height="17" alt="">
+                              <span>10 mi.</span>
+                            </p>
+                          </div>
+                          <div class="align-self-end w-fit-content">
+                            <button type="button" class="btn btn-sm main-action-button w-fit-content">
+                              <div class="button-icon">
+                                <img src="../assets/img/shoppping-bag.svg" height="18" width="18" class="buy-bag" />
+                              </div>
+                              <div class="btn-text">Buy</div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="product-card card ">
+                    <div class="card-header">
+                      <div class="card-header-icon">
+                        <img src="../assets/img/image-18.jpg" class="Image-18" />
+                      </div>
+                      <div class="card-header-title">Great Basin
+                        Soap co.</div>
+                    </div>
+                    <div class="card-body p-0 pb-2">
+                      <img class="img-fluid" src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=Image" alt="">
+                      <div class="card-body-bottom pt-2 px-3">
+                        <p class="card-text m-0 font-rw-b-14 mt-1">The Bath Tub Rambler</p>
+                        <div class="d-flex justify-content-end mt-2">
+                          <strong class="card-text sub-text price-text font-rw-b-16">$10</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mt-2">
+                          <div class="">
+                            <p class="card-text sub-text d-flex flex-column">
+                              <img src="../assets/img/location-marker-muted-14X17.svg" width="14" height="17" alt="">
+                              <span>10 mi.</span>
+                            </p>
+                          </div>
+                          <div class="align-self-end w-fit-content">
+                            <button type="button" class="btn btn-sm main-action-button w-fit-content">
+                              <div class="button-icon">
+                                <img src="../assets/img/shoppping-bag.svg" height="18" width="18" class="buy-bag" />
+                              </div>
+                              <div class="btn-text">Buy</div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- End of Top cards -->
+        </div>
+        <!-- End of Content Wrapper -->
+      </div>
+    </div>
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Footer Starts -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row footer-section-top d-none d-md-flex">
+        <div class="col-md-3 text-right">
+          <div class="footer-logo-section">
+            <a class="" href="#">
+              <img src="../assets/img/logo-icn.svg" class="footer-logo" />
+            </a>
+            <p class="footer-logo-text">www.Bukit.com</p>
+          </div>
+        </div>
+        <div class="col-md-3 footer-links">
+          <a class="" href="#"> Legal </a>
+          <a class="" href="#"> Terms & Conditions </a>
+          <a class="" href="#"> Privacy Policy </a>
+        </div>
+        <div class="col-md-3 footer-links">
+          <a class="" href="#"> About Us </a>
+          <a class="" href="#"> Who We Are </a>
+          <a class="" href="#"> FAQ </a>
+        </div>
+        <div class="col-md-3 footer-links">
+          <a class="" href="#">
+            <i class="bi bi-facebook"> Facebook</i>
+          </a>
+          <a class="" href="#">
+            <i class="bi bi-twitter"> Twitter</i>
+          </a>
+        </div>
+      </div>
+      <div class="d-md-none footer-section-top">
+        <div class="footer-links d-flex justify-content-center">
+          <a class="" href="#"> About Us </a>
+          <span class="px-2"> | </span>
+          <a class="" href="#"> Legal </a>
+        </div>
+        <div class="footer-links d-flex justify-content-center">
+          <a class="px-2" href="#">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a class="px-2" href="#">
+            <i class="bi bi-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-section-bottom text-center">
+        <p>2020 Bukit, LLC</p>
+        <hr />
+        <p>Powered by Wyred Insights</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Ends -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+  <script src="../assets/js/sidenav.js"></script>
+
+  <script>
+
+    $(".add-card").on("click", function () {
+      let className = $(this).data('inputClass');
+      if (className) {
+        // creating input on-the-fly
+        var input = $(document.createElement("input"));
+        input.attr("type", "file");
+        input.attr("class", className);
+        // add onchange handler if you wish to get the file :)
+        input.trigger("click"); // opening dialog
+        return false; // avoiding navigation
+      }
+
+    });
+
+
+
+    // edit toggle
+    $(".toggle-edit").on("click", function (event) {
+      const $parent = $(event.currentTarget).closest('.toggle-edit-parent'),
+        parentDataId = $parent.data('id'),
+        parentId = $parent.attr('id'),
+        isEditEnabled = parentId.includes('edit');
+
+      $parent.removeClass('d-flex').addClass('d-none');
+      if (isEditEnabled) {
+        $('#' + parentDataId).removeClass('d-none').addClass('d-flex');
+      } else {
+        $('#' + parentDataId + '-edit').removeClass('d-none').addClass('d-flex');
+      }
+    })
+
+  </script>
+</body>
+
+</html>
