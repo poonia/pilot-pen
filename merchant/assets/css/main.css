@@ -957,15 +957,17 @@ input[type='number'] {
 }
 
 .side-nav-owl .owl-prev {
-  left: 0;
+  /*left: 0;*/
+  left: -18px;
 }
 
 .side-nav-owl .owl-next {
-  right: 0;
+  /*right: 0;*/
+  right: -18px;
 }
 
 .side-nav-owl .owl-stage-outer {
-  margin: 0 25px;
+  /*margin: 0 25px;*/
 }
 
 .owl-carousel-item-container {

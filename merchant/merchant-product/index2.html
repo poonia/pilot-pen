@@ -242,9 +242,9 @@
                   <!-- <div class="mb-5 mainContainer d-flex justify-content-center align-items-center">
                     <img src="http://via.placeholder.com/350x200/f2ebe5/222.jpg?text=No Image" class="img-fluid">
                   </div> -->
-                  <div class="d-flex bg-grey p-4 h-100 flex-column">
-                    <div class="row align-items-center">
-                      <div class="col-12 col-carousel">
+                  <div class="d-flex bg-grey h-100 flex-column p-4">
+                    <div class="">
+                      <div class="col-carousel">
                         <div class="owl-carousel carousel-product-img-profile side-nav-owl">
                           <div class="owl-carousel-item-container newImgContainer">
                             <div class="add-card d-flex flex-column bg-white m-0">
@@ -1272,7 +1272,22 @@
 
         // owl for product image in modal
         $('.carousel-product-img-modal, .carousel-product-img-profile').owlCarousel({
-          items: 3,
+          responsiveClass:true,
+          responsive:{
+            0:{
+              items:3,
+              nav:true
+            },
+            600:{
+              items:3,
+              nav:true
+            },
+            1000:{
+              items:3,
+              nav:true,
+              loop:false
+            }
+          },
           loop: false,
           autoplay: false,
           margin: 10,

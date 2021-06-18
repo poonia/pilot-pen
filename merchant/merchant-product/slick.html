@@ -1,0 +1,161 @@
+<html>
+  <head>
+  <title>My Now Amazing Webpage</title>
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/slick/slick-theme.css">
+  </head>
+  <style type="text/css">
+    .primary {
+      height: 500px;
+    }
+    .secondary {
+      height: 300px;
+      margin-top: 50px;
+    }
+    .slider {
+      width: 50%;
+      margin: 100px auto;
+    }
+    .slick-slide {
+      margin: 0px 10px;
+    }
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .prev,
+    .next
+    {
+      font-size: 12px;
+      line-height: 1;
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      cursor: pointer;
+      color: #333;
+      border: none;
+      outline: none;
+      background: transparent;
+    }
+    .prev {
+      left: -25px;
+    }
+    .next {
+      right: -25px;
+    }
+  </style>
+  <body>
+
+  <div style="width: 80%; height: 1300px; padding: 4rem;background: #dfdfdf;">
+    <div class="primary">
+      <div>
+        <img src="https://splidejs.com/wp-content/themes/splide/assets/images/slides/01.jpg">
+      </div>
+      <div>
+        <img src="https://splidejs.com/wp-content/themes/splide/assets/images/slides/02.jpg">
+      </div>
+      <div>
+        <img src="https://splidejs.com/wp-content/themes/splide/assets/images/slides/03.jpg">
+      </div>
+      <div>
+        <img src="https://splidejs.com/wp-content/themes/splide/assets/images/slides/04.jpg">
+      </div>
+      <div>
+        <img src="https://splidejs.com/wp-content/themes/splide/assets/images/slides/05.jpg">
+      </div>
+      <div>
+        <img src="https://splidejs.com/wp-content/themes/splide/assets/images/slides/06.jpg">
+      </div>
+      <div>
+        <img src="https://splidejs.com/wp-content/themes/splide/assets/images/slides/07.jpg">
+      </div>
+    </div>
+
+    <div class="secondary">
+      <div class="items">
+        <img src="https://splidejs.com/wp-content/themes/splide/assets/images/slides/01.jpg">
+      </div>
+      <div class="items">
+        <img src="https://splidejs.com/wp-content/themes/splide/assets/images/slides/02.jpg">
+      </div>
+      <div class="items">
+        <img src="https://splidejs.com/wp-content/themes/splide/assets/images/slides/03.jpg">
+      </div>
+      <div class="items">
+        <img src="https://splidejs.com/wp-content/themes/splide/assets/images/slides/04.jpg">
+      </div>
+      <div class="items">
+        <img src="https://splidejs.com/wp-content/themes/splide/assets/images/slides/05.jpg">
+      </div>
+      <div class="items">
+        <img src="https://splidejs.com/wp-content/themes/splide/assets/images/slides/06.jpg">
+      </div>
+      <div class="items">
+        <img src="https://splidejs.com/wp-content/themes/splide/assets/images/slides/07.jpg">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="../assets/vendor/slick/slick.js"></script>
+
+  <script type="text/javascript">
+    $('.primary').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      centerMode: true,
+      asNavFor: '.secondary'
+    });
+    $('.secondary').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.primary',
+      dots: false,
+      centerMode: true,
+      focusOnSelect: true,
+      arrows: true,
+      prevArrow: '<button class="prev" aria-label="Previous" type="button">Previous</button>',
+      nextArrow: '<button class="next" aria-label="Next" type="button">Next</button>',
+    });
+    // $(".secondary").slick({
+
+    //   // normal options...
+    //   infinite: false,
+
+    //   // the magic
+    //   responsive: [{
+    //     breakpoint: 1024,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       infinite: true
+    //     }
+
+    //   }, {
+
+    //     breakpoint: 600,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       dots: true
+    //     }
+
+    //   }, {
+
+    //     breakpoint: 300,
+    //     settings: "unslick" // destroys slick
+
+    //   }]
+    // });
+  </script>
+
+  </body>
+</html>
