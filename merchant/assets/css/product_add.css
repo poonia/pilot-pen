@@ -51,3 +51,41 @@
 #sortable li {
   list-style: none !important;
 }
+
+
+
+.default-img-container {
+  border: none;
+}
+.img-sub-card {
+  height: 90px !important;
+  width: 120px !important;
+}
+
+.default-img-text {
+  color: #777;
+  position: absolute;
+  width: 160px;
+  font-size: 15px !important;
+}
+
+.primary_default .primary-img-div .slick-img {
+  height: 400px;
+  /* width: 100%; */
+  object-fit: cover;
+}
+.secondary_default .img-sub-card .slick-img {
+  object-fit: cover;
+  width: 120px;
+  height: 90px;
+}
+
+.bukit-btn {
+  border: 1px solid #7ccdce;
+  background-color: white;
+  color: #7ccdce;
+  display: flex;
+  align-items: center;
+}
+
+

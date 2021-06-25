@@ -183,7 +183,7 @@ body {
 
 /* bg color */
 .bg-grey {
-  background: #f7f7f7;
+  background: #f7f7f7 !important;
 }
 
 a {
@@ -1213,3 +1213,7 @@ input[type='number'] {
   border-radius: 0 !important;
 }
 /* Color picker */
+
+.h-400 {
+  height: 400px;
+}
