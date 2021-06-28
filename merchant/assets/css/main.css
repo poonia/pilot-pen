@@ -147,7 +147,7 @@ body {
 }
 .font-rw-r-20 {
   font-family: 'Raleway-R', sans-serif;
-  font-size: 2rem;
+  font-size: 2rem  !important;
 }
 
 .font-rw-b-17 {
