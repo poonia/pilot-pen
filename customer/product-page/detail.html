@@ -149,7 +149,7 @@
                         <div class="col-sm-6 d-flex flex-column flex-grow-1 pdp-carousel-wrapper">
                             <div class="d-flex p-4 h-100 flex-column">
 
-                                <h3 class="font-qs-b-20">Local Natural Bar of Soap</h3>
+                                <h3 class="font-qs-b-20 pb-3">Local Natural Bar of Soap</h3>
 
                                 <div class="main-img-container d-none d-sm-block">
                                     <img src="http://via.placeholder.com/600x300/FECA57/FFF.jpg?text=2"
@@ -284,24 +284,43 @@
                             </div>
 
                             <div class="quantity-block font-rw-b-20 mb-4">
-                                <div class="col-6 m-0 p-0">
+                                <div class="col-6 m-0 p-0 d-block d-sm-none">
                                     <select id="quantity-select" class="form-control d-block w-100 rounded  mt-2">
                                       <option selected>Qty: 1</option>
                                       <option>Qty: 2</option>
                                       <option>...</option>
                                     </select>
                                 </div>
-                            </div>
-
-                            <div class="d-none d-sm-block">
-                                <hr>
+                                <div class="col-6 m-0 p-0 d-none d-sm-block">
+                                    <span class="font-rw-b-18">Qty.</span>
+                                    <div class="d-inline-block">
+                                        <button class="product-info-toggle-btn ">
+                                            <span class="fas fa-chevron-left fa-1x" aria-hidden="true"></span>
+                                        </button>
+                                        <span class="font-rw-b-18">2</span>
+                                        <button class="product-info-toggle-btn ">
+                                            <span class="fas fa-chevron-right fa-1x" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="buy-block d-flex flex-column product-price-block">
-                                <div class="text-right">
-                                    <button type="button" class="btn btn-danger buy-btn font-rw-b-20">
+                                <div class="">
+                                    <button type="button" class="btn btn-danger buy-btn product-buy-btn font-rw-b-20">
                                         <img src="../assets/img/shoppping-bag.svg" class="float-start" alt="buy">
-                                        BUY</button>
+                                        <span>BUY</span>
+                                        </button>
+                                </div>
+                                <div class="d-flex flex-column product-delivery-info">
+                                    <div class="mb-3">
+                                        <img src="../assets/img/bus.svg" alt="bus" width="25">
+                                        <span class="pl-1">Applicable for <a href="">Bukit Delivery</a> </span>
+                                    </div>
+                                    <div class="">
+                                        <img src="../assets/img/clock.svg" alt="time" width="20" class="">
+                                        <span class="pl-3">Deliverable 4 hrs Left </span>
+                                    </div>
                                 </div>
                             </div>
 
@@ -311,9 +330,16 @@
                     <div class="row mb-5">
                         <div class="col-12 ">
                             <div class="row bg-grey p-5 m-0 rounded">
-                                <div class="col-sm-6">
-                                    <h3 class="font-rw-b-20 mb-4">Product Info</h3>
-
+                                <div class="col-12">
+                                    <h3 class="font-rw-b-20 mb-4">Product Info
+                                        <button class="product-info-toggle-btn d-inline-block d-sm-none">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="product-info-toggle-btn-icn" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                              </svg>
+                                        </button>
+                                    </h3>
+                                </div>
+                                <div class="col-sm-6 product-info-containers">
                                     <h3 class="font-rw-b-20">Description</h3>
                                     <p class="mb-4">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -334,7 +360,7 @@
                                     </p>
 
                                 </div>
-                                <div class="col-sm-6">
+                                <div class="col-sm-6 product-info-containers">
                                     <h3 class="font-rw-b-20">Product Label</h3>
                                     <p class="mb-5">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -1147,6 +1173,17 @@
             const imgSrc = $(this).find("img").attr("src");
             $(".pdp-carousel-wrapper").find('.main-product-img').attr("src", imgSrc);
         });
+
+        $('.product-info-toggle-btn').on('click', function(){
+            if($('.product-info-containers').hasClass('d-none')) {
+                $('.product-info-containers').removeClass('d-none');
+                $(".product-info-toggle-btn-icn").css("transform","rotate(0deg)");
+
+            } else {
+                $('.product-info-containers').addClass('d-none');
+                $(".product-info-toggle-btn-icn").css("transform","rotate(-90deg)");
+            }
+        })
     </script>
 </body>
 
